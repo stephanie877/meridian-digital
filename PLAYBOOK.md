@@ -1,301 +1,549 @@
 # Meridian Digital — Operational Playbook
+_Last updated: 2026-04-23_
 
-## LEAD RESEARCH SYSTEM
+---
 
-### Step 1: Find Leads (Outscraper - $5-10)
-1. Go to outscraper.com → Google Maps Scraper
-2. Search term: "HVAC contractor" | Location: [Your target city, TX] | Radius: 50mi
+## 🎯 NICHE STRATEGY
+
+### Tier 1 — Lead Niches (Start Now)
+| Niche | Avg Job Value | Google Ads CPC | Why |
+|---|---|---|---|
+| 🔥 Fire & Water Restoration | $5k–$40k | $7.85 | Emergency urgency, terrible sites, almost zero agency competition |
+| ⚡ Electricians | $3k–$50k+ | $7.85 | Underserved vs HVAC, one-owner shops, high urgency searches |
+
+### Tier 2 — Parallel Launch (Week 3)
+| Niche | Avg Job Value | Why |
+|---|---|---|
+| 🏗️ General Contractors / Remodelers | $20k–$200k+ | Highest ticket of the group, same outreach playbook |
+
+### Tier 3 — Quick Win / Volume Play
+| Niche | Avg Job Value | Why |
+|---|---|---|
+| 🚗 Auto Repair (independent shops) | $300–$2k/visit | Massive number of targets, fast closes, simple pitch, terrible sites |
+
+### ❌ Do Not Target
+- Personal Injury Law — most competitive agency niche in existence
+- Dental — saturated, 5th pitch they've heard this month
+- Standard Real Estate agents — $2.53 CPC, flooded with purpose-built tools
+- Restaurants — low margin, wrong model
+
+---
+
+## 🔑 THE CORE PITCH (BY NICHE)
+
+### 🔥 Fire & Water Restoration
+> "Most of your jobs come from emergencies — floods, fires, burst pipes. Those calls happen at 2am on a Friday. If your site doesn't load in 2 seconds on a phone and capture that lead immediately, it goes to whoever's number two. We fix that. AI intake bot, mobile-first, live in 14 days."
+
+### ⚡ Electricians
+> "Panel upgrades, rewiring jobs, commercial installs — customers find you on Google when they have a problem. If your site loads slowly, isn't mobile-friendly, or doesn't let them book a call instantly, they hit back and call your competitor. We build sites that convert that search urgency into booked jobs."
+
+### 🏗️ General Contractors
+> "Your next $50k remodel client is Googling contractors right now. They're comparing 3-4 sites in 10 minutes. If yours looks dated, loads slowly, or doesn't have a clear quote request form, they move on. We build project-portfolio sites with AI intake that pre-qualify leads before they even talk to you."
+
+### 🚗 Auto Repair
+> "Your shop runs on cars coming in the door. Most new customers Google you on their phone before they call. If your site doesn't load fast, doesn't show your reviews, and doesn't have online booking — they're calling the shop down the street. We add all of that in 14 days."
+
+---
+
+## 💰 PRICING
+
+| Package | Setup Fee | Monthly Retainer |
+|---|---|---|
+| Standard (Restoration, Electrician, Auto) | $2,500 | $500/mo |
+| Premium (GC, complex sites, multi-location) | $4,000 | $750/mo |
+
+**Payment process:** 50% upfront via Stripe Payment Link, 50% on launch day. Retainer auto-bills monthly after launch.
+
+**The ROI pitch:** One restoration job ($5k avg) covers the setup fee. One remodel ($50k avg) covers 10 months of retainer. Frame it this way every time.
+
+---
+
+## 🔍 LEAD QUALIFICATION MARKERS
+
+Flag a site as a target if it has **3 or more** of these:
+
+- [ ] Footer copyright year ≤ 2019
+- [ ] Fails Google Mobile-Friendly Test (search.google.com/test/mobile-friendly)
+- [ ] PageSpeed mobile score < 50 (pagespeed.web.dev)
+- [ ] No SSL — loads as `http://` not `https://`
+- [ ] Contact email is @gmail.com, @yahoo.com, or @hotmail.com
+- [ ] No online booking or scheduling widget
+- [ ] No live chat or AI bot
+- [ ] Built on old Wix, Weebly, or aged WordPress theme (check BuiltWith.com)
+- [ ] No Google Reviews embedded
+- [ ] Last blog/news post before 2020
+- [ ] No schema markup (test: search.google.com/test/rich-results)
+- [ ] Pixelated logo, stock photos from 2010s
+- [ ] Tables-based layout or horizontal scroll on mobile
+
+**Lead Score:** 1 point per marker. Priority threshold:
+- 4–5 pts = **Warm Lead** → email sequence
+- 6+ pts = **Hot Lead** → email + LinkedIn DM same day
+- 7 pts = **Priority** → consider a personalized video loom
+
+---
+
+## 🔎 LEAD RESEARCH SYSTEM
+
+### Step 1: Export Raw Leads ($5–10 on Outscraper)
+1. Go to **outscraper.com** → Google Maps Scraper
+2. Run these searches one city at a time:
+   - `"fire restoration contractor"` | City, State
+   - `"water damage restoration"` | City, State
+   - `"electrician"` | City, State
+   - `"electrical contractor"` | City, State
+   - `"auto repair shop"` | City, State
 3. Export CSV with: name, phone, website, email, address, rating, review_count
-4. Filter: has_website = TRUE, review_count > 10 (established businesses)
-5. This gets you 200-500 leads per $5 credit
+4. Filter: `has_website = TRUE` and `review_count >= 5`
+5. ~300–500 leads per $5
 
-### Step 2: Qualify Leads
-Run each website through:
-- https://search.google.com/test/mobile-friendly → Screenshot result
-- https://pagespeed.web.dev → Note mobile score
-- View-source → Ctrl+F "copyright" → Check year
-- BuiltWith.com → Check tech stack / CMS age
-- Check if they have: chat widget, booking form, SSL
+### Step 2: Qualify Each Lead
+For each website:
+1. Paste URL into **PageSpeed Insights** → note mobile score
+2. Paste URL into **Google Mobile-Friendly Test**
+3. View-source → Ctrl+F "copyright" → note year
+4. Paste domain into **BuiltWith.com** → note CMS and age
+5. Check for chat widget, booking form, SSL
+6. Score against qualification markers above
 
-### Step 3: Score Each Lead (add to Airtable)
-- Score 1 pt for each disqualifier found (max 7 pts)
-- Priority threshold: 4+ pts = HOT LEAD
-- 7 pts = cold call first
+### Step 3: Research the Owner
+Before any outreach:
+1. Google: `"[Business Name]" owner` or `"[Business Name]" founded`
+2. Check LinkedIn for the owner's name
+3. Check Google Reviews for recurring themes (response style, services praised)
+4. Note: How long in business? Any press/awards? Recent reviews mentioning their communication?
 
----
-
-## FIRST 5 QUALIFIED LEADS (HVAC — Dallas/Fort Worth Metro)
-
-### Lead 1
-**Company:** Comfort Masters HVAC
-**City:** Mesquite, TX
-**Phone:** Research via Google Maps
-**Website:** comfortmastershvac.com
-**What to Check:** Footer shows "© 2017", no mobile menu, no SSL on subpages, contact is a Gmail address
-**Hook:** "I noticed your site still shows your 2017 contact form — Google is actively penalizing sites like this now, costing you calls"
-**Owner Research:** Search "[Company] owner" on LinkedIn, BBB, local news
-
-### Lead 2
-**Company:** Pro Air Solutions
-**City:** Grand Prairie, TX
-**Website:** proairsolutionstx.com
-**Flags:** Old WordPress theme (Twenty Fourteen), no chat, no booking, PageSpeed mobile: ~32
-**Hook:** "Your competitors in Grand Prairie rank above you on mobile searches — I can show you exactly why"
-
-### Lead 3
-**Company:** Texas Breeze HVAC
-**City:** Arlington, TX
-**Flags:** Flash banner (literally broken), copyright 2016, no Google reviews widget, Weebly hosted
-**Hook:** "Your site has a Flash element that hasn't loaded since 2020 — first impression for new customers is a broken page"
-
-### Lead 4
-**Company:** Family Air & Heat
-**City:** Garland, TX
-**Flags:** No SSL, tables-based layout, no social proof, last blog post 2018
-**Hook:** "Found your business while researching HVAC companies in Garland — noticed something that's probably costing you 2-3 calls a week"
-
-### Lead 5
-**Company:** Blue Star Mechanical
-**City:** Irving, TX
-**Flags:** Wix site from 2015, no mobile optimization, owner email is @yahoo.com, no chat
-**Hook:** "You're the most reviewed HVAC company in Irving but your site is losing you new customers every day"
+This becomes your personalization hook.
 
 ---
 
-## COLD EMAIL SEQUENCE (3-touch, automated via Brevo)
+## 📧 AUTOMATED EMAIL SEQUENCE (load into Brevo)
 
-### Email 1 — Day 0 (The Hook)
-Subject: [Business Name] — found something on your site
+### 🔥 Restoration / ⚡ Electrician Track
 
-Hi [Owner First Name],
-
-I was searching for HVAC contractors in [City] and came across [Business Name].
-
-Quick question: are you aware that [X]% of people who find your site on their phone are probably leaving before they ever call you?
-
-I ran a 60-second check on your site — it scores [X] on Google's mobile speed test. In 2025, that's enough for most people to hit back and call your competitor.
-
-I build AI-powered business hubs specifically for HVAC companies. Not just a new website — a system that:
-• Loads in under 2 seconds on any device
-• Has an AI assistant that answers questions and captures leads at 2am
-• Lets customers book jobs directly from the page
-
-Would it make sense to hop on a quick call this week? I'll pull your full site audit and show you exactly what's leaking.
-
-[Name]
-Meridian Digital
-meridiandigital.co
-
-P.S. The audit is free. No obligation.
-
----
-
-### Email 2 — Day 3 (The Proof)
-Subject: Re: [Business Name] — quick follow-up
+**Email 1 — Day 0: The Emergency Hook**
+```
+Subject: [Business Name] — your site during a 2am emergency
 
 Hi [First Name],
 
-Wanted to share something specific to [Business Name].
+Quick question: when someone's basement is flooding at 2am and they Google "[City] water damage" — what happens when they land on your site?
 
-I pulled your Google PageSpeed score: [X]/100 on mobile.
-The average score for top-ranking HVAC companies in [City]: 78+.
+I checked [Business Name]'s site. On mobile it scores [X]/100 for speed. At that score, most visitors leave before it even loads.
 
-That gap is real money. At 10-15 calls/week, even if you're losing 2-3 due to your site — that's $400-800/week walking out the door.
+That's not a website problem. That's a missed $8,000 job.
 
-Reply and I'll send the full breakdown. Takes 15 minutes on a call to walk through it.
+I build AI-powered sites specifically for restoration companies. They load instantly on any phone, and an AI assistant captures lead info even when you're on a job or asleep.
+
+Worth a 15-minute call? I'll pull your full site audit beforehand.
 
 [Name]
+Meridian Digital | meridiandigital.co
+```
 
----
+**Email 2 — Day 3: The Competitor Angle**
+```
+Subject: Re: [Business Name] — what I found
 
-### Email 3 — Day 7 (The Deadline)
+Hi [First Name],
+
+Pulled the full picture on [Business Name] vs the top-ranked restoration company in [City].
+
+Their mobile score: 84. Yours: [X].
+They have: online intake form, AI chat, booking widget.
+You have: a contact page and a phone number.
+
+That gap is costing you. Every emergency search where someone picks them over you.
+
+I can close that gap in 14 days. The site pays for itself with one job.
+
+Want to see what yours would look like?
+
+[Name]
+```
+
+**Email 3 — Day 7: Close or Move On**
+```
 Subject: Closing your file — [Business Name]
 
 Hi [First Name],
 
-I'm closing out my outreach list for [City] this week.
+Wrapping up my outreach in [City] this week.
 
-If you want me to run the full audit for [Business Name] before I move on, just reply "yes" and I'll send it over.
+If you want me to run the full audit for [Business Name] before I move on to the next contractor on my list, reply "yes" and I'll send it over today.
 
-If the timing isn't right, no worries at all — I'll check back in 90 days.
+If timing's off, I'll check back in 90 days.
 
 [Name]
+```
 
 ---
 
-## LINKEDIN DM (for owners you can find)
+### 🏗️ General Contractor Track
 
-Hi [Name],
+**Email 1 — Day 0**
+```
+Subject: [Business Name] — found something worth flagging
 
-I came across [Business Name] while researching HVAC companies in [City].
+Hi [First Name],
 
-Quick observation: your site scores [X] on mobile speed, which means Google is actively pushing you down in local searches vs competitors.
+I was researching contractors in [City] for a project and came across [Business Name].
 
-I rebuild service-business websites into AI-powered hubs — live in 14 days. Happy to share a free site audit if useful.
+You've got [X] reviews and [years] in business — clearly doing good work. But your website is making it harder than it should be to win new clients.
+
+Mobile score: [X]/100. No quote request form. No project portfolio with before/afters.
+
+Your next $50k client is comparing 3-4 contractors on their phone right now. If your site doesn't close that comparison in your favor, they call someone else.
+
+I build AI-integrated portfolio sites for contractors — delivered in 14 days. The site I'd build you would have a project gallery, instant quote request, and an AI assistant to handle after-hours inquiries.
+
+15 minutes to show you what it could look like?
+
+[Name]
+Meridian Digital
+```
+
+**Email 2 — Day 3**
+```
+Subject: Re: [Business Name] — the specific issues
+
+Hi [First Name],
+
+Ran the full check on [Business Name]'s site.
+
+Issues found:
+• Mobile speed score: [X]/100 (top competitors in [City]: 75+)
+• No SSL certificate on all pages
+• Last updated: appears to be [year]
+• No project portfolio or gallery
+• No quote request / lead capture
+
+Any one of these costs you a potential client. All of them together means you're invisible to the customers doing serious research.
+
+14-day delivery. One remodel covers the cost. Happy to show you what I'd build.
+
+[Name]
+```
+
+**Email 3 — Day 7**
+```
+Subject: Last message — [Business Name]
+
+Hi [First Name],
+
+Last outreach from me.
+
+If you want the full audit and a mock-up of what your new site would look like, reply today and I'll get it to you.
+
+Otherwise, I'll move on — no hard feelings. The offer stands if you circle back.
+
+[Name]
+```
+
+---
+
+### 🚗 Auto Repair Track
+
+**Email 1 — Day 0**
+```
+Subject: [Business Name] — losing bookings to your phone
+
+Hi [First Name],
+
+Your mechanics are too busy to answer every call. That's a good problem — until it means missed appointments.
+
+I checked [Business Name]'s site. No online booking. Mobile score: [X]/100. Contact is a phone number.
+
+Every customer who can't book online — especially the ones calling during shop hours when you're elbow-deep in an engine — is a potential lost job.
+
+I add AI-powered booking and a fast mobile site to shops like yours in 14 days. Customers schedule online, you get a notification. No phone tag.
 
 Worth a quick chat?
 
+[Name]
+Meridian Digital
+```
+
+**Email 2 — Day 3**
+```
+Subject: Re: [Business Name] — quick follow-up
+
+Hi [First Name],
+
+To put a number on it: if your shop does 15 jobs a week and you're losing even 2 because people couldn't reach you or left your site — that's roughly $600–$1,200/week walking out the door.
+
+I build mobile-optimized sites with online booking and AI chat for independent auto shops. One month of recovered bookings covers the cost of the site.
+
+Happy to show you what it looks like. 15 minutes?
+
+[Name]
+```
+
+**Email 3 — Day 7**
+```
+Subject: Closing out — [Business Name]
+
+Hi [First Name],
+
+Last message on my end.
+
+Reply "audit" and I'll send over a full breakdown of what's costing [Business Name] bookings — free, no strings.
+
+[Name]
+```
+
 ---
 
-## AIRTABLE CRM SCHEMA
+## 💬 LINKEDIN DM (All Niches)
+
+```
+Hi [Name],
+
+Came across [Business Name] while researching [restoration/electrical/contracting] companies in [City].
+
+Quick observation: your site scores [X] on mobile speed — Google actively suppresses slower sites in local search, which means your competitors with faster sites are getting calls you should be getting.
+
+I rebuild service-business websites into AI-powered hubs. 14-day turnaround. Happy to share a free audit if useful.
+
+Worth a chat?
+```
+
+---
+
+## 📋 AIRTABLE CRM SCHEMA
 
 ### Table: Leads
-Fields:
-- Name (text) — owner's first name
-- Business (text)
-- City (text)
-- Phone (phone number)
-- Email (email)
-- Website (URL)
-- Niche (single select: HVAC, Law Firm, Dental, Other)
-- Mobile Score (number: 0-100)
-- Copyright Year (number)
-- Issues Found (multi-select: No SSL, No Mobile, Old CMS, No Chat, Gmail Email, No Booking, Outdated Design)
-- Lead Score (formula: count of Issues Found)
-- Status (single select: New, Emailed-1, Emailed-2, Emailed-3, Replied, Call Booked, Proposal Sent, Won, Lost, No Reply)
-- Last Contacted (date)
-- Notes (long text)
-- Source (single select: Outscraper, Manual, Referral, Inbound)
-- Deal Value (currency)
-- Follow-up Date (date)
 
-### Views:
-- 🔥 Hot Leads (Lead Score >= 4, Status = New)
-- 📧 Sequence Active (Status in [Emailed-1, Emailed-2])
-- 📞 Call Booked (Status = Call Booked)
-- 💰 Pipeline (Status in [Proposal Sent])
-- ✅ Won Clients (Status = Won)
+| Field | Type | Notes |
+|---|---|---|
+| Name | Text | Owner's first name |
+| Business | Text | Company name |
+| City | Text | |
+| Phone | Phone | |
+| Email | Email | |
+| Website | URL | |
+| Niche | Single select | Restoration, Electrician, GC, Auto Repair, Other |
+| Mobile Score | Number | 0–100 from PageSpeed |
+| Copyright Year | Number | From footer |
+| Issues Found | Multi-select | No SSL, No Mobile, Old CMS, No Chat, Gmail Email, No Booking, No Reviews, Outdated Design |
+| Lead Score | Formula | `COUNT(Issues Found)` |
+| Status | Single select | New → Emailed-1 → Emailed-2 → Emailed-3 → Replied → Call Booked → Proposal Sent → Won → Lost → No Reply |
+| Last Contacted | Date | |
+| Follow-up Date | Date | |
+| Source | Single select | Outscraper, Manual, Inbound, Referral |
+| Owner Research | Long text | LinkedIn, Google, review themes |
+| Personalization Hook | Long text | What's the unique angle for this lead? |
+| Deal Value | Currency | Estimated setup + 6mo retainer |
+| Notes | Long text | |
 
----
-
-## MAKE.COM AUTOMATION FLOWS
-
-### Flow 1: Website Form → Airtable + Email Alert
-Trigger: Webhook (from meridiandigital.co contact form)
-Actions:
-1. Create record in Airtable Leads table (Status: Inbound)
-2. Send email notification to hello@meridiandigital.co
-3. Add to Brevo contact list "Inbound Leads"
-
-### Flow 2: Brevo Sequence Trigger
-Trigger: Airtable record created (Status = New, has Email)
-Actions:
-1. Add contact to Brevo email list
-2. Enroll in 3-email sequence (Day 0, Day 3, Day 7)
-3. Update Airtable status to "Emailed-1"
-
-### Flow 3: Reply Detection → Status Update
-Trigger: Brevo email reply received
-Actions:
-1. Find matching Airtable record by email
-2. Update Status to "Replied"
-3. Send Slack/Discord notification to you
+### Views to Create
+- 🔥 **Hot Leads** — Lead Score ≥ 6, Status = New
+- 🌡️ **Warm Leads** — Lead Score 4–5, Status = New
+- 📧 **In Sequence** — Status in [Emailed-1, Emailed-2]
+- 📞 **Call Booked** — Status = Call Booked
+- 💰 **Active Pipeline** — Status = Proposal Sent
+- ✅ **Won Clients** — Status = Won
+- 🔄 **Follow-up Due** — Follow-up Date ≤ Today
 
 ---
 
-## SOCIAL MEDIA CONTENT (Week 1 Batch)
+## ⚙️ MAKE.COM AUTOMATION FLOWS
 
-### LinkedIn Posts (post 3x/week)
+### Flow 1: Contact Form → CRM + Alert
+**Trigger:** Webhook (meridiandigital.co/api/contact)
+**Actions:**
+1. Create Airtable record (Niche: Inbound, Status: Replied)
+2. Send email alert to hello@meridiandigital.co
+3. Add contact to Brevo list "Inbound Leads"
 
-**Post 1 — The Hook**
-I checked 50 HVAC company websites this week.
+### Flow 2: New Lead → Email Sequence
+**Trigger:** Airtable record created (Status = New, Email not empty)
+**Actions:**
+1. Add to Brevo contact list by niche (Restoration, Electrician, GC, Auto)
+2. Enroll in matching 3-email sequence
+3. Update Airtable Status → "Emailed-1"
+4. Set Follow-up Date → Today + 3 days
 
-Here's what I found:
-• 38 scored under 50 on Google's mobile speed test
-• 41 had no AI chat or lead capture
-• 27 had a copyright date of 2018 or earlier
+### Flow 3: Email Reply → CRM Update
+**Trigger:** Brevo reply detected
+**Actions:**
+1. Find Airtable record by email
+2. Update Status → "Replied"
+3. Send Discord/push notification to you
 
-These aren't bad businesses.
-They're just invisible online.
-
-An HVAC tech charges $150/hr for their expertise.
-Their website makes $0/hr and actively loses them customers.
-
-That's the gap we close.
-
-#HVAC #WebDesign #SmallBusiness #DigitalMarketing #AI
-
----
-
-**Post 2 — The Story**
-A plumbing company owner told me:
-"I get most of my work from referrals, I don't really need a website."
-
-Two months later he messaged back:
-"My competitor just got a feature in the local paper. Their site looks incredible. Mine looks like 2012."
-
-He lost two commercial contracts to them that quarter.
-
-Your referral network is an asset.
-Your website is supposed to be your 24/7 salesperson.
-
-If it's not doing that job, it's costing you money.
-
-#PlumbingBusiness #ContractorLife #WebDesign #BusinessGrowth
+### Flow 4: Follow-up Date Reached → Status Bump
+**Trigger:** Airtable Follow-up Date = Today
+**Actions:**
+1. If Status = Emailed-1 → send Email 2, set Status = Emailed-2, Follow-up = +4 days
+2. If Status = Emailed-2 → send Email 3, set Status = Emailed-3
+3. If Status = Emailed-3 and no reply after 7 days → set Status = No Reply
 
 ---
 
-**Post 3 — The Result**
-What happens when a local HVAC company upgrades from a 2017 site to an AI-powered hub:
+## 📱 SOCIAL MEDIA — WEEK 1 CONTENT
 
-Month 1: 40% increase in contact form submissions
-Month 2: AI bot handles after-hours inquiries, captures 8 leads
-Month 3: 3 new jobs booked directly through the site's scheduling widget
+### LinkedIn Post 1 — The Insight (post Monday)
+```
+I spent this week checking websites for fire and water restoration companies.
 
-The site paid for itself in 6 weeks.
+Here's what I found across 50 businesses:
 
-Most service businesses think "websites don't work for us."
+→ 41 had a mobile speed score under 50
+→ 38 had no way to capture a lead outside business hours
+→ 29 still had a 2017 or older copyright date
 
-The website isn't broken. It's just 5 years behind.
+These aren't bad businesses. Most had 4-5 stars and years of experience.
 
-(We build AI-powered sites for HVAC, plumbing, law, and dental in 14 days. DM "AUDIT" and I'll run yours for free.)
+But their website is losing them jobs every single week.
+
+Restoration is an emergency business. Customers search at 2am during a flood.
+If your site doesn't load in 2 seconds and capture that lead — it goes to whoever's next on the list.
+
+That's an $8,000 job gone. From a slow website.
+
+#Restoration #SmallBusiness #WebDesign #AI #DigitalMarketing
+```
+
+### LinkedIn Post 2 — The Story (post Wednesday)
+```
+An electrician told me he doesn't need a website.
+
+"All my work comes from referrals."
+
+I looked up his business anyway.
+
+His site hadn't been updated since 2016.
+Mobile score: 22/100.
+No booking. No chat. Contact page with a phone number that rang to voicemail.
+
+Meanwhile, the electrical company ranking above him in Google had a mobile score of 81, online booking, and a chat widget.
+
+That competitor is capturing every emergency search.
+
+Referrals dry up. Emergency searches don't.
+
+#Electrician #ContractorLife #LocalBusiness #WebDesign
+```
+
+### LinkedIn Post 3 — The Offer (post Friday)
+```
+What happens when a restoration company upgrades from a 2018 site to an AI-powered hub:
+
+Month 1: Mobile bounce rate drops 60%
+Month 2: AI bot captures 11 after-hours leads
+Month 3: 4 jobs booked directly through the site
+
+Setup paid for itself in the first week.
+
+We build AI-powered sites for restoration companies, electricians, and contractors in 14 days.
+
+DM me "AUDIT" and I'll run your site for free. No pitch, just the data.
+
+#WaterDamage #FireRestoration #SmallBusiness #AIWebsite
+```
+
+### Instagram/Facebook Carousel — "5 Signs Your Site Is Losing You Emergency Jobs"
+```
+Slide 1: 🚨 5 Signs Your Website Is Losing You Emergency Jobs
+Slide 2: 1. It takes more than 3 seconds to load on a phone
+Slide 3: 2. There's no way to submit a lead outside business hours
+Slide 4: 3. Your footer says © 2018 or earlier
+Slide 5: 4. Your contact is a Gmail or phone number only
+Slide 6: 5. There's no chat, no bot, no intake form
+Slide 7: We fix all 5 in 14 days — with AI included.
+         DM us "AUDIT" for a free site check.
+```
 
 ---
 
-**Instagram/Facebook Carousel — "5 Signs Your Website Is Losing You Customers"**
-Slide 1: 🚨 5 Signs Your Website Is Losing You Customers
-Slide 2: 1. It loads slowly on phones (60%+ of searches are mobile)
-Slide 3: 2. Your footer says © 2018 or earlier
-Slide 4: 3. There's no chat or AI assistant (you're losing after-hours leads)
-Slide 5: 4. Customers can't book online
-Slide 6: 5. Your contact email is @gmail.com
-Slide 7: We fix all 5 in 14 days. DM us "AUDIT" for a free check.
+## 💳 STRIPE SETUP
+
+Create these products in Stripe Dashboard → Products:
+
+| Product | Price | Type |
+|---|---|---|
+| Website Build — Standard | $2,500 | One-time |
+| Website Build — Premium | $4,000 | One-time |
+| Monthly Retainer — Standard | $500 | Recurring (monthly) |
+| Monthly Retainer — Premium | $750 | Recurring (monthly) |
+
+**Workflow:**
+1. Win a client → create a Stripe Payment Link for 50% upfront (e.g. $1,250 for Standard)
+2. On launch day → send Payment Link for remaining 50%
+3. Day of launch → activate subscription via Stripe (auto-bills monthly)
 
 ---
 
-## STRIPE SETUP
+## 🚀 DEPLOYMENT CHECKLIST
 
-Products to create in Stripe:
-1. "Website Build — Standard" → $2,500 one-time
-2. "Website Build — Premium" → $4,000 one-time
-3. "Monthly Retainer" → $500/mo recurring (subscription)
-4. "Monthly Retainer — Premium" → $750/mo recurring
+### Domain & Hosting
+- [ ] Buy `meridiandigital.co` on Porkbun (~$12)
+- [ ] Push site repo to GitHub
+- [ ] Import repo in Vercel → Deploy
+- [ ] Add domain in Vercel: Settings → Domains → meridiandigital.co
+- [ ] Verify DNS propagation (usually 5–30 min on Porkbun)
 
-Payment flow:
-- Send client a Stripe Payment Link (no code needed)
-- Collect 50% upfront, 50% on launch
-- Set up subscription to auto-bill monthly after launch
+### Email
+- [ ] Set up Cloudflare Email Routing (free): hello@meridiandigital.co → your real inbox
+- [ ] OR: Zoho Mail free plan for sending from hello@meridiandigital.co
 
----
+### Environment Variables (add in Vercel → Settings → Env Vars)
+- [ ] `MAKE_WEBHOOK_URL` — from your Make.com scenario
+- [ ] `BREVO_API_KEY` — from Brevo dashboard
 
-## DEPLOYMENT CHECKLIST
+### CRM & Automation
+- [ ] Create Airtable account (free) → build Leads table per schema above
+- [ ] Create Make.com account (free) → build Flows 1–4
+- [ ] Create Brevo account (free) → build 3 email sequences (Restoration, Electrician, GC, Auto)
+- [ ] Test end-to-end: submit contact form → verify Airtable record created → verify email alert received
 
-### meridiandigital.co Setup
-- [ ] Buy domain on Porkbun: meridiandigital.co (~$12)
-- [ ] Add to Vercel: Settings → Domains → Add
-- [ ] Set up Cloudflare Email Routing: hello@meridiandigital.co → your real inbox
-- [ ] Create .env in Vercel with MAKE_WEBHOOK_URL and BREVO_API_KEY
-- [ ] Set up Make.com webhook → paste URL in Vercel env vars
-- [ ] Test contact form end-to-end
+### Outreach Setup
+- [ ] $5 Outscraper credit → run first export (restoration + electrician, your target city)
+- [ ] Import CSV to Airtable → qualify top 50 leads manually
+- [ ] Launch first Brevo sequence
 
 ### Social Media
 - [ ] LinkedIn company page: "Meridian Digital"
-- [ ] Instagram: @meridiandigital (or @meridiandigital.co)
-- [ ] Schedule Week 1 posts in Buffer (free plan)
+- [ ] Instagram: @meridiandigital (check availability)
+- [ ] Buffer free account → schedule Week 1 posts
+- [ ] Post Day 1 content immediately after site goes live
 
-### Lead System
-- [ ] Create free Airtable account
-- [ ] Build Leads table per schema above
-- [ ] Connect to Make.com
-- [ ] Set up Brevo email sequences
-- [ ] Run first Outscraper export ($5) for Dallas HVAC
+---
+
+## 📅 30-DAY ROADMAP
+
+### Week 1 — Infrastructure
+- [ ] Site live on meridiandigital.co
+- [ ] Airtable + Make.com + Brevo configured
+- [ ] First 50 qualified leads in CRM
+- [ ] Email sequences running
+- [ ] Social content scheduled
+
+### Week 2 — Volume Outreach
+- [ ] 200+ leads added to CRM
+- [ ] Track reply rates — adjust subject lines if < 5%
+- [ ] LinkedIn DMs running in parallel
+- [ ] First calls booked
+
+### Week 3 — First Closes
+- [ ] Convert first 1–2 clients
+- [ ] Collect deposit via Stripe
+- [ ] Begin builds
+- [ ] Add GC niche to outreach
+
+### Week 4 — Scale
+- [ ] 2–3 sites in production
+- [ ] Referral ask from first clients
+- [ ] Review what's converting, double down
+- [ ] Add auto repair volume plays
+
+### Month 2 — Retainer Stacking
+- Goal: 4 active retainers @ $500/mo = $2,000 MRR
+- 4 more closes = $2,000/mo additional
+- Month 2 target: $4,000–$6,000 MRR
+
+### Month 3 — $10k Target
+- 12–15 setups billed to date
+- 8–10 active retainers = $4,000–$5,000 MRR
+- 4+ new setups = $10,000–$16,000 setup revenue
+- **Total Month 3 revenue: $14,000–$21,000**
