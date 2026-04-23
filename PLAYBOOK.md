@@ -47,14 +47,93 @@ _Last updated: 2026-04-23_
 
 ## 💰 PRICING
 
-| Package | Setup Fee | Monthly Retainer |
+### Service Packages
+
+| Package | Setup Fee | Monthly | What's Included |
+|---|---|---|---|
+| **Hub** | $2,500–$4,000 | $500/mo | Website + AI bot + booking + SEO |
+| **Hub + Lead Machine** | $3,500–$5,000 | $900/mo | Everything + automated outbound lead gen for client's referral sources |
+| **Hub + Review & Text** | $3,500–$5,000 | $750/mo | Everything + SMS texting + review automation + missed-call text-back |
+| **Full Stack** | $5,000–$6,500 | $1,200/mo | All three — the complete growth system |
+
+### Add-Ons (bolt onto any base package)
+| Add-On | Monthly | What It Does |
 |---|---|---|
-| Standard (Restoration, Electrician, Auto) | $2,500 | $500/mo |
-| Premium (GC, complex sites, multi-location) | $4,000 | $750/mo |
+| **Lead Machine** | +$400/mo | Automated outreach to referral sources (insurance adjusters, property managers, etc.) |
+| **Review & Text Engine** | +$250/mo | Post-job review texts, 2-way SMS, missed-call text-back, review monitoring |
 
 **Payment process:** 50% upfront via Stripe Payment Link, 50% on launch day. Retainer auto-bills monthly after launch.
 
-**The ROI pitch:** One restoration job ($5k avg) covers the setup fee. One remodel ($50k avg) covers 10 months of retainer. Frame it this way every time.
+**The ROI pitch by package:**
+- Hub: One restoration job ($5k) covers setup. One month of calls = retainer paid.
+- Lead Machine: One insurance adjuster relationship = 10+ referred jobs/year. One job covers 6 months of the add-on.
+- Review & Text: Going from 20 → 100 Google reviews lifts conversions 25–40%. At their avg job value, the math is obvious.
+- Full Stack: Frame it as $1,200/mo vs a part-time marketing hire at $3,000/mo. More capability, less cost.
+
+---
+
+## 📱 REVIEW & TEXT ENGINE — HOW IT WORKS
+
+### What the Client Gets
+1. **Post-job review requests** — automated text after every job: "Hi [Name], thanks for choosing [Business]! We'd love your feedback → [Google Review Link]"
+2. **Missed-call text-back** — missed call triggers auto-text: "Hi, we missed your call! Reply here to get started or we'll call you back shortly."
+3. **2-way SMS inbox** — customers text the business directly; owner responds from one inbox
+4. **Review monitoring** — new Google/Yelp reviews trigger an alert; we respond on their behalf within 24 hours
+5. **Appointment reminders** — "Reminder: your service is tomorrow at 10am. Reply C to confirm or R to reschedule."
+
+### Tech Stack (our cost ~$90/mo per client)
+| Tool | Role | Our Cost |
+|---|---|---|
+| **NiceJob** | Review automation — texts, tracks, embeds on site | ~$75/mo |
+| **Twilio** | 2-way SMS, missed-call text-back, reminders | ~$15/mo |
+| **Make.com** | Automation triggers | Free/existing |
+
+**We charge:** $250/mo add-on | **Our cost:** ~$90/mo | **Margin:** ~$160/mo per client
+
+### Setup Process (~1.5 hours per client)
+1. Create NiceJob account → connect to client's Google Business Profile
+2. Provision Twilio number (local area code for their city)
+3. Make.com scenario: job marked complete → trigger NiceJob review request
+4. Make.com scenario: missed call → Twilio sends text-back
+5. Wire appointment reminders to their booking system
+6. Embed NiceJob review widget on their website
+7. Test end-to-end, hand off
+
+---
+
+## 🎯 LEAD MACHINE ADD-ON — HOW IT WORKS
+
+### What the Client Gets
+We build and run automated outbound lead gen targeting their referral sources — not end customers, but the businesses that SEND them customers.
+
+### Referral Targets by Niche
+**Restoration → Target:**
+- Insurance adjusters (control which contractor gets the job)
+- Property managers (multiple units = recurring jobs)
+- Real estate investors (fix-and-flip damage work)
+
+**Electricians → Target:**
+- Property managers and landlords
+- Real estate developers (electrical on every build)
+- General contractors (subcontractor relationships)
+
+**General Contractors → Target:**
+- Real estate agents (clients doing renovations)
+- Architects (need trusted GC partners)
+- Property developers (ongoing project pipeline)
+
+### Tech Stack (our cost ~$25/mo per client)
+| Tool | Role | Our Cost |
+|---|---|---|
+| **Outscraper** | Pull target lists | ~$5–10/batch |
+| **Brevo** | Run email sequences | Free tier |
+| **Make.com** | Automation | Free/existing |
+| **Airtable** | Track responses | Free/existing |
+
+**We charge:** $400/mo | **Our cost:** ~$25/mo | **Margin:** ~$375/mo ← highest margin service we offer
+
+### Note on LinkedIn Automation
+Tools like PhantomBuster can auto-connect + DM targets on LinkedIn. Effective but technically violates LinkedIn ToS — risk of client account bans. Recommend sticking to email outreach for client-facing delivery. We can use PhantomBuster for Meridian's OWN lead gen safely.
 
 ---
 
@@ -462,10 +541,15 @@ Create these products in Stripe Dashboard → Products:
 
 | Product | Price | Type |
 |---|---|---|
-| Website Build — Standard | $2,500 | One-time |
-| Website Build — Premium | $4,000 | One-time |
-| Monthly Retainer — Standard | $500 | Recurring (monthly) |
-| Monthly Retainer — Premium | $750 | Recurring (monthly) |
+| Website Build — Hub | $2,500 | One-time |
+| Website Build — Hub + Add-Ons | $3,500 | One-time |
+| Website Build — Full Stack | $5,000 | One-time |
+| Retainer — Hub | $500 | Recurring (monthly) |
+| Retainer — Hub + Lead Machine | $900 | Recurring (monthly) |
+| Retainer — Hub + Review & Text | $750 | Recurring (monthly) |
+| Retainer — Full Stack | $1,200 | Recurring (monthly) |
+| Add-On — Review & Text Engine | $250 | Recurring (monthly) |
+| Add-On — Lead Machine | $400 | Recurring (monthly) |
 
 **Workflow:**
 1. Win a client → create a Stripe Payment Link for 50% upfront (e.g. $1,250 for Standard)

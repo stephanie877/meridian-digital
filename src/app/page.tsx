@@ -502,6 +502,8 @@ export default function Home() {
               { icon: "🔍", title: "Local SEO Foundation", sub: "Built to rank", desc: "Schema markup, Google Business integration, local keyword structure, and review embeds — all built in from day one, not bolted on later." },
               { icon: "📊", title: "Analytics Dashboard", sub: "Know your numbers", desc: "See exactly how many visits, where they came from, which pages convert, and how many leads your AI bot captured. Real data, not guesses." },
               { icon: "🔄", title: "Ongoing Updates", sub: "Included in retainer", desc: "New service? Seasonal promo? Price change? Send us a message and it&apos;s live within 24 hours. Your site stays current without touching it yourself." },
+              { icon: "📱", title: "Review & Text Engine", sub: "Add-on: +$250/mo", desc: "After every job, your customer gets an automated text asking for a Google review. Missed a call? They get a text-back instantly. 2-way SMS inbox included." },
+              { icon: "🎯", title: "Lead Machine", sub: "Add-on: +$400/mo", desc: "We build and run automated outreach to your referral sources — insurance adjusters, property managers, contractors. The businesses that send you jobs, on autopilot." },
             ].map((s, i) => (
               <div key={s.title} className={`glass glass-hover rounded-2xl p-6 fade-up delay-${i + 1}`}>
                 <div className="text-3xl mb-3">{s.icon}</div>
@@ -662,47 +664,75 @@ export default function Home() {
 
       {/* ── PRICING ── */}
       <section id="pricing" className="py-24 px-5" style={{ background: "rgba(255,255,255,0.01)" }}>
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14 fade-up">
             <div className="chip mx-auto mb-5">Pricing</div>
             <h2 className="display font-bold mb-4" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)" }}>One job covers the cost.</h2>
-            <p style={{ color: "var(--muted)" }}>No hidden fees. No surprises. Cancel the retainer any month.</p>
+            <p style={{ color: "var(--muted)" }}>No hidden fees. No surprises. Cancel any month.</p>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Setup */}
-            <div className="glass rounded-2xl p-8 fade-up">
-              <div className="text-3xl mb-4">🚀</div>
-              <div className="display font-bold text-xl text-white mb-1">Setup</div>
-              <div className="display font-bold mb-1" style={{ fontSize: "2.5rem", color: "var(--text)" }}>$2,500<span className="text-lg font-normal" style={{ color: "var(--muted)" }}>–$4,000</span></div>
-              <div className="text-sm mb-6" style={{ color: "var(--muted)" }}>One-time. Delivered in 14 days.</div>
-              <ul className="space-y-3 mb-8">
-                {["Full custom design", "AI chat bot — trained on your business", "Online booking integration", "Mobile & speed optimized (90+ score)", "Local SEO foundation", "Google Analytics 4 setup"].map(f => (
-                  <li key={f} className="flex items-center gap-2 text-sm" style={{ color: "var(--text)" }}>
+          <div className="grid md:grid-cols-3 gap-5 mb-8">
+            {/* Hub */}
+            <div className="glass rounded-2xl p-7 fade-up">
+              <div className="text-2xl mb-3">🚀</div>
+              <div className="display font-bold text-lg text-white mb-0.5">The Hub</div>
+              <div className="text-xs mb-3 gradient-text font-medium">Website + AI + SEO</div>
+              <div className="display font-bold mb-1" style={{ fontSize: "2rem" }}>$2,500<span className="text-base font-normal" style={{ color: "var(--muted)" }}>+</span></div>
+              <div className="text-xs mb-1" style={{ color: "var(--muted)" }}>setup + <span className="text-white font-medium">$500/mo</span></div>
+              <div className="my-4" style={{ borderTop: "1px solid var(--border)" }} />
+              <ul className="space-y-2 mb-6">
+                {["AI chat bot (24/7)", "Online booking", "Mobile-first build", "Local SEO foundation", "Monthly updates"].map(f => (
+                  <li key={f} className="flex items-center gap-2 text-xs" style={{ color: "var(--text)" }}>
                     <span className="text-violet-400 flex-shrink-0"><Icon name="check" /></span> {f}
                   </li>
                 ))}
               </ul>
-              <a href="#contact" className="block w-full btn-ghost py-3 rounded-xl font-semibold text-center text-white">Start with the Audit →</a>
+              <a href="#contact" className="block w-full btn-ghost py-2.5 rounded-xl text-sm font-semibold text-center text-white">Get Started →</a>
             </div>
-            {/* Retainer */}
-            <div className="rounded-2xl p-8 fade-up delay-2 glow" style={{ background: "rgba(124,106,255,0.08)", border: "1px solid rgba(124,106,255,0.3)" }}>
-              <div className="flex items-center justify-between mb-4">
-                <div className="text-3xl">🔄</div>
-                <span className="text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full" style={{ background: "rgba(124,106,255,0.2)", color: "#a78bfa" }}>Most Popular</span>
+            {/* Full Stack */}
+            <div className="rounded-2xl p-7 fade-up delay-2 glow" style={{ background: "rgba(124,106,255,0.08)", border: "1px solid rgba(124,106,255,0.35)" }}>
+              <div className="flex items-center justify-between mb-3">
+                <div className="text-2xl">⚡</div>
+                <span className="text-xs font-bold px-2.5 py-1 rounded-full" style={{ background: "rgba(124,106,255,0.25)", color: "#a78bfa" }}>Most Popular</span>
               </div>
-              <div className="display font-bold text-xl text-white mb-1">Monthly Retainer</div>
-              <div className="display font-bold mb-1" style={{ fontSize: "2.5rem", color: "var(--text)" }}>$500<span className="text-lg font-normal" style={{ color: "var(--muted)" }}>/mo</span></div>
-              <div className="text-sm mb-6" style={{ color: "var(--muted)" }}>Month-to-month. Cancel any time.</div>
-              <ul className="space-y-3 mb-8">
-                {["Unlimited content updates", "AI bot retraining as you grow", "Monthly performance reports", "Priority support — real humans", "Seasonal promotions & new pages", "Hosting & security included"].map(f => (
-                  <li key={f} className="flex items-center gap-2 text-sm" style={{ color: "var(--text)" }}>
+              <div className="display font-bold text-lg text-white mb-0.5">Full Stack</div>
+              <div className="text-xs mb-3 gradient-text font-medium">Hub + Lead Machine + Reviews</div>
+              <div className="display font-bold mb-1" style={{ fontSize: "2rem" }}>$5,000<span className="text-base font-normal" style={{ color: "var(--muted)" }}>+</span></div>
+              <div className="text-xs mb-1" style={{ color: "var(--muted)" }}>setup + <span className="text-white font-medium">$1,200/mo</span></div>
+              <div className="my-4" style={{ borderTop: "1px solid rgba(124,106,255,0.2)" }} />
+              <ul className="space-y-2 mb-6">
+                {["Everything in Hub", "Automated review requests via SMS", "Missed-call text-back", "2-way customer texting", "Outbound referral lead gen", "Monthly performance report"].map(f => (
+                  <li key={f} className="flex items-center gap-2 text-xs" style={{ color: "var(--text)" }}>
                     <span className="text-violet-400 flex-shrink-0"><Icon name="check" /></span> {f}
                   </li>
                 ))}
               </ul>
-              <a href="#contact" className="block w-full btn-primary py-3 rounded-xl font-semibold text-center text-white">Get Started Today →</a>
+              <a href="#contact" className="block w-full btn-primary py-2.5 rounded-xl text-sm font-semibold text-center text-white">Get Started →</a>
+            </div>
+            {/* Add-ons */}
+            <div className="glass rounded-2xl p-7 fade-up delay-3">
+              <div className="text-2xl mb-3">🔧</div>
+              <div className="display font-bold text-lg text-white mb-0.5">Add-Ons</div>
+              <div className="text-xs mb-3" style={{ color: "var(--muted)" }}>Bolt onto any package</div>
+              <div className="space-y-3 mb-6">
+                <div className="p-3 rounded-xl" style={{ background: "rgba(255,255,255,0.03)", border: "1px solid var(--border)" }}>
+                  <div className="flex justify-between items-center mb-1">
+                    <span className="text-sm font-semibold text-white">📱 Review & Text</span>
+                    <span className="font-bold text-sm gradient-text">+$250/mo</span>
+                  </div>
+                  <p className="text-xs" style={{ color: "var(--muted)" }}>Post-job review texts, missed-call text-back, 2-way SMS</p>
+                </div>
+                <div className="p-3 rounded-xl" style={{ background: "rgba(255,255,255,0.03)", border: "1px solid var(--border)" }}>
+                  <div className="flex justify-between items-center mb-1">
+                    <span className="text-sm font-semibold text-white">🎯 Lead Machine</span>
+                    <span className="font-bold text-sm gradient-text">+$400/mo</span>
+                  </div>
+                  <p className="text-xs" style={{ color: "var(--muted)" }}>Automated outreach to insurance adjusters, property managers & referral sources</p>
+                </div>
+              </div>
+              <a href="#contact" className="block w-full btn-ghost py-2.5 rounded-xl text-sm font-semibold text-center text-white">Ask About Add-Ons →</a>
             </div>
           </div>
+          <p className="text-center text-sm" style={{ color: "var(--muted)" }}>All packages: 50% upfront, 50% on launch. Month-to-month retainers, cancel any time. Free site audit before you commit.</p>
         </div>
       </section>
 
