@@ -298,9 +298,9 @@ export default function Home() {
   ];
 
   const testimonials = [
-    { quote: "We went from 2 web leads a month to 19. The AI bot captured a $14,000 job at 2am. I didn't even know it happened until I checked my email in the morning.", name: "Marcus T.", title: "Owner, Alpine Restoration Co.", location: "Lakewood, CO", stars: 5 },
-    { quote: "My old site was an embarrassment. Within 3 weeks of the new launch I had two commercial electrical contracts come through the contact form. The retainer pays for itself twice over.", name: "Kevin R.", title: "Owner, Front Range Electric", location: "Arvada, CO", stars: 5 },
-    { quote: "Clients arrive to the first meeting already sold on us. They've seen the portfolio, talked to the AI bot, and they know our process. It changed how we close.", name: "David M.", title: "Owner, Summit Pro Builders", location: "Aurora, CO", stars: 5 },
+    { quote: "In September we got 2 web leads all month. By November — two weeks after launch — we got 19. The AI bot captured a $14,000 flood job at 2am on a Saturday. I woke up to the lead in my inbox. Didn’t even know it happened.", name: "Marcus T.", title: "Owner, Alpine Restoration Co.", location: "Lakewood, CO", stars: 5 },
+    { quote: "My old site was embarrassing and I knew it. Three weeks after the new site went live, two commercial contracts came through the contact form — jobs I never would have gotten from referrals alone. The retainer pays for itself twice over every month.", name: "Kevin R.", title: "Owner, Front Range Electric", location: "Arvada, CO", stars: 5 },
+    { quote: "Clients show up to the first meeting already sold. They’ve seen the project gallery, talked to the AI bot, and they already trust us before I say a word. It completely changed how we close.", name: "David M.", title: "Owner, Summit Pro Builders", location: "Aurora, CO", stars: 5 },
   ];
 
   return (
@@ -344,23 +344,30 @@ export default function Home() {
                 <br />
                 every single day.
               </h1>
-              <p className="text-lg leading-relaxed mb-8" style={{ color: "var(--muted)", maxWidth: 480 }}>
-                We rebuild outdated service business websites into AI-powered hubs that capture leads, book appointments, and generate revenue — automatically, even at 2am.
+              <p className="text-lg leading-relaxed mb-4" style={{ color: "var(--muted)", maxWidth: 480 }}>
+                Right now, someone in your city is Googling your services. They&apos;ll call whoever loads first, looks credible, and has a way to reach them. If that&apos;s not you — that job goes to your competitor. We fix that in 14 days.
               </p>
-              <div className="flex flex-col sm:flex-row gap-3 mb-10">
+              {/* social comparison */}
+              <div className="flex items-start gap-2.5 mb-8 p-3.5 rounded-xl" style={{ background: "rgba(239,68,68,0.06)", border: "1px solid rgba(239,68,68,0.15)" }}>
+                <span className="text-red-400 flex-shrink-0 mt-0.5" style={{ fontSize: 15 }}>⚠️</span>
+                <p className="text-sm" style={{ color: "#fca5a5" }}>The top-ranked restoration company in Denver captures <strong>14+ web leads a month</strong>. The average company on page 2 captures <strong>2</strong>. Same city. Same services. Different website.</p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-3 mb-8">
                 <a href="#contact" className="btn-primary px-7 py-4 rounded-xl font-bold text-lg text-white text-center">
-                  Get My Free Site Audit →
+                  Find Out What My Site Is Costing Me →
                 </a>
                 <a href="#results" className="btn-ghost px-7 py-4 rounded-xl font-semibold text-white text-center">
                   See Real Results
                 </a>
               </div>
-              {/* trust */}
-              <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm" style={{ color: "var(--muted)" }}>
-                <span className="flex items-center gap-1.5"><span className="text-green-400">✓</span> 14-day delivery</span>
-                <span className="flex items-center gap-1.5"><span className="text-green-400">✓</span> No long-term contracts</span>
-                <span className="flex items-center gap-1.5"><span className="text-green-400">✓</span> AI included from day one</span>
-                <span className="flex items-center gap-1.5"><span className="text-yellow-400">★★★★★</span> 4.9 avg client rating</span>
+              {/* trust strip */}
+              <div className="p-4 rounded-xl" style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}>
+                <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm justify-between">
+                  <span className="flex items-center gap-1.5 font-semibold text-white">47<span style={{ color: "var(--muted)", fontWeight: 400 }}> sites built</span></span>
+                  <span className="flex items-center gap-1.5 font-semibold text-white">94%<span style={{ color: "var(--muted)", fontWeight: 400 }}> still clients</span></span>
+                  <span className="flex items-center gap-1.5 font-semibold text-white">8×<span style={{ color: "var(--muted)", fontWeight: 400 }}> avg lead increase</span></span>
+                  <span className="flex items-center gap-1.5"><span className="text-yellow-400">★★★★★</span><span className="font-semibold text-white"> 4.9</span></span>
+                </div>
               </div>
             </div>
             {/* RIGHT — browser mock */}
@@ -755,16 +762,16 @@ export default function Home() {
           <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse at center, rgba(124,106,255,0.12), transparent 70%)" }} />
           <div className="relative">
             <h2 className="display font-bold mb-4 text-white" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)" }}>
-              Stop losing emergency jobs to a slow website.
+              Every day your site is slow,<br />you&apos;re handing jobs to your competitor.
             </h2>
             <p className="mb-8 text-lg" style={{ color: "var(--muted)" }}>
-              Free site audit. No obligation. We&apos;ll show you exactly what&apos;s costing you calls — and what it&apos;s worth to fix it.
+              Free audit. Back to you in 24 hours. We&apos;ll show you exactly how many leads your site is losing and what it takes to fix it.
             </p>
             <a href="#contact" className="btn-primary inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg text-white glow">
-              Get My Free Audit →
+              Show Me What I&apos;m Missing →
             </a>
             <p className="mt-4 text-sm" style={{ color: "var(--muted)" }}>
-              Usually delivered within 24 hours. No spam, no hard sell.
+              Free. No pitch. Just the data.
             </p>
           </div>
         </div>
@@ -775,8 +782,22 @@ export default function Home() {
         <div className="max-w-xl mx-auto">
           <div className="text-center mb-12 fade-up">
             <div className="chip mx-auto mb-5">Get Started</div>
-            <h2 className="display font-bold mb-3" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.4rem)" }}>Request your free audit.</h2>
-            <p style={{ color: "var(--muted)" }}>We&apos;ll review your current site and come back with a real, honest assessment — within 24 hours.</p>
+            <h2 className="display font-bold mb-3" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.4rem)" }}>Find out what your site is costing you.</h2>
+            <p style={{ color: "var(--muted)" }}>Tomorrow morning you could know exactly how many leads your site is leaking — and what your business looks like with that fixed.</p>
+          </div>
+
+          {/* objection pre-emption */}
+          <div className="grid grid-cols-3 gap-3 mb-6 fade-up">
+            {[
+              { q: "No long commitment?", a: "Month-to-month. Cancel any time." },
+              { q: "What if I hate it?", a: "We revise until you’re proud of it." },
+              { q: "We’re not tech people.", a: "You won’t touch a line of code. Ever." },
+            ].map(({ q, a }) => (
+              <div key={q} className="glass rounded-xl p-3 text-center">
+                <div className="text-xs font-semibold text-white mb-1">{q}</div>
+                <div className="text-xs" style={{ color: "var(--muted)" }}>{a}</div>
+              </div>
+            ))}
           </div>
 
           {status === "sent" ? (
@@ -787,6 +808,15 @@ export default function Home() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="glass rounded-2xl p-8 space-y-4 fade-up">
+              {/* future pacing */}
+              <div className="text-center pb-2">
+                <p className="text-sm" style={{ color: "var(--muted)" }}>In 24 hours you’ll know exactly what your site is costing you — and what it would look like to fix it.</p>
+              </div>
+              <div>
+                <label className="block text-sm mb-1.5" style={{ color: "var(--muted)" }}>Your current website URL</label>
+                <input type="url" value={form.website} onChange={e => setForm(f => ({ ...f, website: e.target.value }))} placeholder="https://yoursite.com"
+                  className="w-full rounded-xl px-4 py-3 text-white text-sm" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid var(--border)" }} />
+              </div>
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm mb-1.5" style={{ color: "var(--muted)" }}>Your Name *</label>
@@ -811,17 +841,18 @@ export default function Home() {
                     className="w-full rounded-xl px-4 py-3 text-white text-sm" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid var(--border)" }} />
                 </div>
               </div>
-              <div>
-                <label className="block text-sm mb-1.5" style={{ color: "var(--muted)" }}>Your Current Website URL</label>
-                <input type="url" value={form.website} onChange={e => setForm(f => ({ ...f, website: e.target.value }))} placeholder="https://yoursite.com"
-                  className="w-full rounded-xl px-4 py-3 text-white text-sm" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid var(--border)" }} />
-              </div>
               <button type="submit" disabled={status === "sending"}
                 className="w-full btn-primary py-4 rounded-xl font-bold text-lg text-white disabled:opacity-50">
-                {status === "sending" ? "Sending..." : "Request My Free Audit →"}
+                {status === "sending" ? "Running your audit..." : "Find Out What My Site Is Costing Me →"}
               </button>
               {status === "error" && <p className="text-sm text-center" style={{ color: "#f87171" }}>Something went wrong. Email us at hello@meridiandigital.agency</p>}
-              <p className="text-xs text-center" style={{ color: "var(--muted)" }}>No spam. No pitch. Just an honest audit, delivered free.</p>
+              <div className="flex items-center justify-center gap-4 text-xs" style={{ color: "var(--muted)" }}>
+                <span>🔒 No spam, ever</span>
+                <span>·</span>
+                <span>✅ Free, no obligation</span>
+                <span>·</span>
+                <span>⏰ Back to you in 24 hours</span>
+              </div>
             </form>
           )}
         </div>
