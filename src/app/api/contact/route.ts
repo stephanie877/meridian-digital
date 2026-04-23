@@ -18,7 +18,7 @@ export async function POST(req: NextRequest) {
           email,
           phone,
           website: message,
-          source: "website_contact_form",
+          source: "Contact Form",
           timestamp: new Date().toISOString(),
         }),
       });
