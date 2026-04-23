@@ -814,7 +814,7 @@ export default function Home() {
               </div>
               <div>
                 <label className="block text-sm mb-1.5" style={{ color: "var(--muted)" }}>Your current website URL</label>
-                <input type="url" value={form.website} onChange={e => setForm(f => ({ ...f, website: e.target.value }))} placeholder="https://yoursite.com"
+                <input type="text" value={form.website} onChange={e => setForm(f => ({ ...f, website: e.target.value }))} placeholder="yoursite.com"
                   className="w-full rounded-xl px-4 py-3 text-white text-sm" style={{ background: "rgba(255,255,255,0.05)", border: "1px solid var(--border)" }} />
               </div>
               <div className="grid md:grid-cols-2 gap-4">
