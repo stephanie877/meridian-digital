@@ -205,7 +205,7 @@ const StatCard = ({ value, suffix, label, icon, active }: {
 const faqs = [
   { q: "What exactly is an 'AI-Powered Business Hub'?", a: "It's not just a website — it's a full lead-capture system. You get a lightning-fast mobile site, an AI chat assistant trained on your business that handles inquiries 24/7, online booking, Google Reviews integration, and a local SEO foundation. It works while you sleep." },
   { q: "What types of businesses do you work with?", a: "We specialize in service businesses: fire & water restoration, electricians, general contractors, auto repair shops, pool builders, and similar trades. These are high-ticket service businesses where a single job covers our fee and where most owners have websites that are actively costing them calls." },
-  { q: "How does the 14-day delivery actually work?", a: "Day 1–2: We audit your current site and gather your assets (logo, photos, services). Day 3–7: Design and build. Day 8–12: AI bot training, booking integration, testing. Day 13–14: Final review with you, launch. We've done this enough times that it's a clean process, not a scramble." },
+  { q: "How does the 14-day delivery actually work?", a: "Day 1–2: We assess your current site and gather your assets (logo, photos, services). Day 3–7: Design and build. Day 8–12: AI bot training, booking integration, testing. Day 13–14: Final review with you, launch. We've done this enough times that it's a clean process, not a scramble." },
   { q: "What happens if I don't like what you build?", a: "Before we go live, you get a full review session. We do revisions until you're satisfied. We're not done until you're proud of it. In practice, clients are usually more excited than they expected." },
   { q: "Do I need to provide content and photos?", a: "Photos help — we'll guide you on what to take (your team, your equipment, a few jobs). For copy, we write everything based on a short intake form. Most clients provide a few bullets and we do the rest." },
   { q: "What does the monthly retainer include?", a: "Unlimited content updates (new services, promotions, seasonal pages), ongoing AI bot tuning as your business evolves, monthly performance reports showing leads captured and traffic, and priority support. You call us, we pick up." },
@@ -316,7 +316,7 @@ export default function Home() {
             ))}
           </div>
           <a href="#contact" className="btn-primary px-5 py-2.5 rounded-full text-sm font-semibold text-white">
-            Free Audit →
+            Free Assessment →
           </a>
         </div>
       </nav>
@@ -616,7 +616,7 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { n: "01", icon: "🔍", title: "Free Audit", desc: "We analyze your current site in 24 hours. You get a full breakdown of exactly what's costing you leads." },
+              { n: "01", icon: "🔍", title: "Free Assessment", desc: "We analyze your current site in 24 hours. You get a full breakdown of exactly what's costing you leads." },
               { n: "02", icon: "🎨", title: "Design & Build", desc: "Your new hub is designed, built, and AI-trained over 10 days. You review it before anything goes live." },
               { n: "03", icon: "🤖", title: "AI Training", desc: "We train your chat bot on your services, prices, and business. It answers like you would — just faster." },
               { n: "04", icon: "🚀", title: "Launch", desc: "We flip the switch. Your new hub goes live, AI bot activates, and you start capturing leads you were losing." },
@@ -739,7 +739,7 @@ export default function Home() {
               <a href="#contact" className="block w-full btn-ghost py-2.5 rounded-xl text-sm font-semibold text-center text-white">Ask About Add-Ons →</a>
             </div>
           </div>
-          <p className="text-center text-sm" style={{ color: "var(--muted)" }}>All packages: 50% upfront, 50% on launch. Month-to-month retainers, cancel any time. Free site audit before you commit.</p>
+          <p className="text-center text-sm" style={{ color: "var(--muted)" }}>All packages: 50% upfront, 50% on launch. Month-to-month retainers, cancel any time. Free site assessment before you commit.</p>
         </div>
       </section>
 
@@ -765,7 +765,7 @@ export default function Home() {
               Every day your site is slow,<br />you&apos;re handing jobs to your competitor.
             </h2>
             <p className="mb-8 text-lg" style={{ color: "var(--muted)" }}>
-              Free audit. Back to you in 24 hours. We&apos;ll show you exactly how many leads your site is losing and what it takes to fix it.
+              Free assessment. Back to you in 24 hours. We&apos;ll show you exactly how many leads your site is losing and what it takes to fix it.
             </p>
             <a href="#contact" className="btn-primary inline-flex items-center gap-2 px-8 py-4 rounded-xl font-bold text-lg text-white glow">
               Show Me What I&apos;m Missing →
@@ -843,7 +843,7 @@ export default function Home() {
               </div>
               <button type="submit" disabled={status === "sending"}
                 className="w-full btn-primary py-4 rounded-xl font-bold text-lg text-white disabled:opacity-50">
-                {status === "sending" ? "Running your audit..." : "Find Out What My Site Is Costing Me →"}
+                {status === "sending" ? "Running your assessment..." : "Find Out What My Site Is Costing Me →"}
               </button>
               {status === "error" && <p className="text-sm text-center" style={{ color: "#f87171" }}>Something went wrong. Email us at hello@meridiandigital.agency</p>}
               <div className="flex items-center justify-center gap-4 text-xs" style={{ color: "var(--muted)" }}>
