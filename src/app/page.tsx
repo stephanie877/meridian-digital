@@ -298,9 +298,9 @@ export default function Home() {
   ];
 
   const testimonials = [
-    { quote: "In September we got 2 web leads all month. By November — two weeks after launch — we got 19. The AI bot captured a $14,000 flood job at 2am on a Saturday. I woke up to the lead in my inbox. Didn’t even know it happened.", name: "Marcus T.", title: "Owner, Alpine Restoration Co.", location: "Lakewood, CO", stars: 5 },
-    { quote: "My old site was embarrassing and I knew it. Three weeks after the new site went live, two commercial contracts came through the contact form — jobs I never would have gotten from referrals alone. The retainer pays for itself twice over every month.", name: "Kevin R.", title: "Owner, Front Range Electric", location: "Arvada, CO", stars: 5 },
-    { quote: "Clients show up to the first meeting already sold. They’ve seen the project gallery, talked to the AI bot, and they already trust us before I say a word. It completely changed how we close.", name: "David M.", title: "Owner, Summit Pro Builders", location: "Aurora, CO", stars: 5 },
+    { quote: "In September we got 2 web leads all month. By November — two weeks after launch — we got 19. The AI bot captured a $14,000 flood job at 2am on a Saturday. I woke up to the lead in my inbox. Didn’t even know it happened.", name: "Marcus T.", title: "Owner, Alpine Restoration Co.", location: "Lakewood, CO", stars: 5, photo: "/restoration-owner.png" },
+    { quote: "My old site was embarrassing and I knew it. Three weeks after the new site went live, two commercial contracts came through the contact form — jobs I never would have gotten from referrals alone. The retainer pays for itself twice over every month.", name: "Kevin R.", title: "Owner, Front Range Electric", location: "Arvada, CO", stars: 5, photo: "/electrician-tablet.png" },
+    { quote: "Clients show up to the first meeting already sold. They’ve seen the project gallery, talked to the AI bot, and they already trust us before I say a word. It completely changed how we close.", name: "David M.", title: "Owner, Summit Pro Builders", location: "Aurora, CO", stars: 5, photo: "/contractor-handshake.png" },
   ];
 
   return (
@@ -674,9 +674,7 @@ export default function Home() {
                 </div>
                 <blockquote className="text-sm leading-relaxed mb-5" style={{ color: "var(--text)" }}>&ldquo;{t.quote}&rdquo;</blockquote>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm" style={{ background: "linear-gradient(135deg,#7c6aff,#60a5fa)", fontFamily: "'Space Grotesk',sans-serif" }}>
-                    {t.name.split(" ").map(n => n[0]).join("")}
-                  </div>
+                  <img src={t.photo} alt={t.name} className="w-10 h-10 rounded-full object-cover flex-shrink-0" style={{ objectPosition: "top" }} />
                   <div>
                     <div className="font-semibold text-sm text-white">{t.name}</div>
                     <div className="text-xs" style={{ color: "var(--muted)" }}>{t.title}</div>
