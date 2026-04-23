@@ -370,9 +370,16 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* RIGHT — browser mock */}
-            <div className="flex justify-center lg:justify-end">
+            {/* RIGHT — browser mock + photo */}
+            <div className="flex flex-col justify-center lg:justify-end gap-4">
               <BrowserMock />
+              <div className="hidden lg:flex items-center gap-3 glass rounded-xl p-3">
+                <img src="/hero-contractor.png" alt="Service business owner" className="w-12 h-12 rounded-lg object-cover" style={{ objectPosition: "top" }} />
+                <div>
+                  <div className="text-sm font-semibold text-white">"I woke up to 3 new leads on Monday morning."</div>
+                  <div className="text-xs" style={{ color: "var(--muted)" }}>— Marcus T., Alpine Restoration Co.</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -605,6 +612,18 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ── PHOTO BREAK ── */}
+      <div className="relative overflow-hidden" style={{ height: 320 }}>
+        <img src="/contractor-handshake.png" alt="Contractors closing a deal" className="w-full h-full object-cover" style={{ objectPosition: "center 30%" }} />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(10,8,16,0.85) 0%, rgba(10,8,16,0.4) 50%, rgba(10,8,16,0.85) 100%)" }} />
+        <div className="absolute inset-0 flex items-center justify-center text-center px-6">
+          <div>
+            <div className="display font-bold text-white mb-2" style={{ fontSize: "clamp(1.4rem, 3vw, 2rem)" }}>Built for the people who build everything else.</div>
+            <p style={{ color: "rgba(255,255,255,0.7)" }}>Restoration crews. Electricians. Contractors. The businesses that keep cities running — finally with websites that work as hard as they do.</p>
+          </div>
+        </div>
+      </div>
 
       {/* ── PROCESS ── */}
       <section id="process" className="py-24 px-5" style={{ background: "rgba(255,255,255,0.01)" }}>
