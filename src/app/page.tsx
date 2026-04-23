@@ -347,19 +347,7 @@ export default function Home() {
               <p className="text-lg leading-relaxed mb-4" style={{ color: "var(--muted)", maxWidth: 480 }}>
                 Right now, someone in your city is Googling your services. They&apos;ll call whoever loads first, looks credible, and has a way to reach them. If that&apos;s not you — that job goes to your competitor. We fix that in 14 days.
               </p>
-              {/* social comparison */}
-              <div className="flex items-center gap-3 mb-8">
-                <div className="flex-1 p-3.5 rounded-xl text-center" style={{ background: "rgba(239,68,68,0.08)", border: "1px solid rgba(239,68,68,0.15)" }}>
-                  <div className="text-2xl font-bold" style={{ color: "#f87171", fontFamily: "'Space Grotesk',sans-serif" }}>2</div>
-                  <div className="text-xs mt-0.5" style={{ color: "var(--muted)" }}>leads/mo — page 2</div>
-                </div>
-                <div className="text-xs font-medium" style={{ color: "var(--muted)" }}>vs</div>
-                <div className="flex-1 p-3.5 rounded-xl text-center" style={{ background: "rgba(124,106,255,0.1)", border: "1px solid rgba(124,106,255,0.25)" }}>
-                  <div className="text-2xl font-bold gradient-text" style={{ fontFamily: "'Space Grotesk',sans-serif" }}>14+</div>
-                  <div className="text-xs mt-0.5" style={{ color: "var(--muted)" }}>leads/mo — page 1</div>
-                </div>
-                <div className="flex-1 text-xs leading-relaxed" style={{ color: "var(--muted)" }}>Same city. Same services. <span className="text-white font-medium">Different website.</span></div>
-              </div>
+
               <div className="flex flex-col sm:flex-row gap-3 mb-8">
                 <a href="#contact" className="btn-primary px-7 py-4 rounded-xl font-bold text-lg text-white text-center">
                   Find Out What My Site Is Costing Me →
@@ -665,29 +653,40 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ── */}
+      {/* ── RESULTS SHOWCASE ── */}
       <section className="py-24 px-5">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-14 fade-up">
-            <div className="chip mx-auto mb-5">Client Stories</div>
-            <h2 className="display font-bold" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)" }}>Don&apos;t take our word for it.</h2>
+            <div className="chip mx-auto mb-5">What Changes After Launch</div>
+            <h2 className="display font-bold mb-4" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)" }}>The numbers don&apos;t lie.</h2>
+            <p style={{ color: "var(--muted)" }}>What service businesses typically see in the first 90 days after switching to a Meridian hub.</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
-            {testimonials.map((t, i) => (
-              <div key={t.name} className={`glass glass-hover rounded-2xl p-7 fade-up delay-${i + 1}`}>
-                <div className="flex gap-0.5 mb-4">
-                  {Array.from({ length: t.stars }).map((_, j) => (
-                    <svg key={j} className="w-4 h-4" viewBox="0 0 24 24" fill="#f59e0b"><path d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" /></svg>
-                  ))}
-                </div>
-                <blockquote className="text-sm leading-relaxed mb-5" style={{ color: "var(--text)" }}>&ldquo;{t.quote}&rdquo;</blockquote>
-                <div className="flex items-center gap-3">
-                  <img src={t.photo} alt={t.name} className="w-10 h-10 rounded-full object-cover flex-shrink-0" style={{ objectPosition: "top" }} />
-                  <div>
-                    <div className="font-semibold text-sm text-white">{t.name}</div>
-                    <div className="text-xs" style={{ color: "var(--muted)" }}>{t.title}</div>
-                  </div>
-                </div>
+          <div className="grid md:grid-cols-2 gap-5 mb-6">
+            <div className="glass rounded-2xl p-8 fade-up" style={{ border: "1px solid rgba(124,106,255,0.2)" }}>
+              <div className="flex items-end gap-3 mb-3">
+                <div className="display font-bold gradient-text" style={{ fontSize: "3.5rem", lineHeight: 1 }}>8×</div>
+                <div className="text-sm pb-2" style={{ color: "var(--muted)" }}>average increase<br />in web leads</div>
+              </div>
+              <p className="text-sm" style={{ color: "var(--muted)" }}>From a site that gets 1–2 inquiries a month to one that captures leads around the clock — including after hours.</p>
+            </div>
+            <div className="glass rounded-2xl p-8 fade-up delay-1" style={{ border: "1px solid rgba(124,106,255,0.2)" }}>
+              <div className="flex items-end gap-3 mb-3">
+                <div className="display font-bold gradient-text" style={{ fontSize: "3.5rem", lineHeight: 1 }}>14<span style={{ fontSize: "2rem" }}>d</span></div>
+                <div className="text-sm pb-2" style={{ color: "var(--muted)" }}>from kickoff<br />to live site</div>
+              </div>
+              <p className="text-sm" style={{ color: "var(--muted)" }}>No months-long agency projects. No waiting. Your new hub is live and capturing leads in two weeks.</p>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-3 gap-5">
+            {[
+              { stat: "Sub 2s", label: "Mobile load time", desc: "Google ranks fast sites higher. Your competitors are still loading in 7+ seconds." },
+              { stat: "24/7", label: "AI lead capture", desc: "The bot qualifies and captures leads while you sleep, including emergency calls at 2am." },
+              { stat: "94%", label: "Client retention", desc: "Month-to-month contracts. Clients stay because the site keeps delivering, not because they’re locked in." },
+            ].map((r, i) => (
+              <div key={r.label} className={`glass rounded-2xl p-6 fade-up delay-${i + 2}`}>
+                <div className="display font-bold gradient-text mb-1" style={{ fontSize: "2rem" }}>{r.stat}</div>
+                <div className="font-semibold text-white text-sm mb-2">{r.label}</div>
+                <p className="text-xs leading-relaxed" style={{ color: "var(--muted)" }}>{r.desc}</p>
               </div>
             ))}
           </div>
