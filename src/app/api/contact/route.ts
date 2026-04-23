@@ -5,8 +5,8 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const { name, business, email, phone, message } = body;
 
-    // Send to Make.com webhook (replace with actual webhook URL)
-    const webhookUrl = process.env.MAKE_WEBHOOK_URL;
+    // Send to Make.com webhook
+    const webhookUrl = process.env.MAKE_WEBHOOK_URL || "https://hook.us2.make.com/ug26td5npe01ppnk64owo80efot94h6o";
     
     if (webhookUrl) {
       await fetch(webhookUrl, {

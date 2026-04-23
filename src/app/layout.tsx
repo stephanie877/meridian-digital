@@ -135,6 +135,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               Chatbot.init({
                 chatflowid: "859eae4e-e97c-48a3-bdb2-b77c97610dfe",
                 apiHost: "https://cloud.flowiseai.com",
+                chatflowConfig: {
+                  vars: {
+                    leadWebhook: "https://hook.us2.make.com/ug26td5npe01ppnk64owo80efot94h6o"
+                  }
+                },
                 theme: {
                   button: {
                     backgroundColor: "#7c6aff",
