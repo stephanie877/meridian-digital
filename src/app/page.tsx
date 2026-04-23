@@ -298,9 +298,9 @@ export default function Home() {
   ];
 
   const testimonials = [
-    { quote: "In September we got 2 web leads all month. By November — two weeks after launch — we got 19. The AI bot captured a $14,000 flood job at 2am on a Saturday. I woke up to the lead in my inbox. Didn’t even know it happened.", name: "Marcus T.", title: "Owner, Alpine Restoration Co.", location: "Lakewood, CO", stars: 5, photo: "/restoration-owner.png" },
+    { quote: "In September we got 2 web leads all month. By November — two weeks after launch — we got 19. The AI bot captured a $14,000 flood job at 2am on a Saturday. I woke up to the lead in my inbox. Didn’t even know it happened.", name: "Marcus T.", title: "Owner, Alpine Restoration Co.", location: "Lakewood, CO", stars: 5, photo: "/owner-phone-lead.png" },
     { quote: "My old site was embarrassing and I knew it. Three weeks after the new site went live, two commercial contracts came through the contact form — jobs I never would have gotten from referrals alone. The retainer pays for itself twice over every month.", name: "Kevin R.", title: "Owner, Front Range Electric", location: "Arvada, CO", stars: 5, photo: "/electrician-tablet.png" },
-    { quote: "Clients show up to the first meeting already sold. They’ve seen the project gallery, talked to the AI bot, and they already trust us before I say a word. It completely changed how we close.", name: "David M.", title: "Owner, Summit Pro Builders", location: "Aurora, CO", stars: 5, photo: "/contractor-handshake.png" },
+    { quote: "Clients show up to the first meeting already sold. They’ve seen the project gallery, talked to the AI bot, and they already trust us before I say a word. It completely changed how we close.", name: "David M.", title: "Owner, Summit Pro Builders", location: "Aurora, CO", stars: 5, photo: "/shop-owner-confident.png" },
   ];
 
   return (
@@ -374,9 +374,9 @@ export default function Home() {
             <div className="flex flex-col justify-center lg:justify-end gap-4">
               <BrowserMock />
               <div className="hidden lg:flex items-center gap-3 glass rounded-xl p-3">
-                <img src="/hero-contractor.png" alt="Service business owner" className="w-12 h-12 rounded-lg object-cover" style={{ objectPosition: "top" }} />
+                <img src="/owner-phone-lead.png" alt="Service business owner getting a lead" className="w-12 h-12 rounded-lg object-cover" style={{ objectPosition: "top center" }} />
                 <div>
-                  <div className="text-sm font-semibold text-white">"I woke up to 3 new leads on Monday morning."</div>
+                  <div className="text-sm font-semibold text-white">&ldquo;I woke up to 3 new leads on Monday morning.&rdquo;</div>
                   <div className="text-xs" style={{ color: "var(--muted)" }}>— Marcus T., Alpine Restoration Co.</div>
                 </div>
               </div>
