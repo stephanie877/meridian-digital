@@ -348,9 +348,17 @@ export default function Home() {
                 Right now, someone in your city is Googling your services. They&apos;ll call whoever loads first, looks credible, and has a way to reach them. If that&apos;s not you — that job goes to your competitor. We fix that in 14 days.
               </p>
               {/* social comparison */}
-              <div className="flex items-start gap-2.5 mb-8 p-3.5 rounded-xl" style={{ background: "rgba(239,68,68,0.06)", border: "1px solid rgba(239,68,68,0.15)" }}>
-                <span className="text-red-400 flex-shrink-0 mt-0.5" style={{ fontSize: 15 }}>⚠️</span>
-                <p className="text-sm" style={{ color: "#fca5a5" }}>The top-ranked restoration company in Denver captures <strong>14+ web leads a month</strong>. The average company on page 2 captures <strong>2</strong>. Same city. Same services. Different website.</p>
+              <div className="flex items-center gap-3 mb-8">
+                <div className="flex-1 p-3.5 rounded-xl text-center" style={{ background: "rgba(239,68,68,0.08)", border: "1px solid rgba(239,68,68,0.15)" }}>
+                  <div className="text-2xl font-bold" style={{ color: "#f87171", fontFamily: "'Space Grotesk',sans-serif" }}>2</div>
+                  <div className="text-xs mt-0.5" style={{ color: "var(--muted)" }}>leads/mo — page 2</div>
+                </div>
+                <div className="text-xs font-medium" style={{ color: "var(--muted)" }}>vs</div>
+                <div className="flex-1 p-3.5 rounded-xl text-center" style={{ background: "rgba(124,106,255,0.1)", border: "1px solid rgba(124,106,255,0.25)" }}>
+                  <div className="text-2xl font-bold gradient-text" style={{ fontFamily: "'Space Grotesk',sans-serif" }}>14+</div>
+                  <div className="text-xs mt-0.5" style={{ color: "var(--muted)" }}>leads/mo — page 1</div>
+                </div>
+                <div className="flex-1 text-xs leading-relaxed" style={{ color: "var(--muted)" }}>Same city. Same services. <span className="text-white font-medium">Different website.</span></div>
               </div>
               <div className="flex flex-col sm:flex-row gap-3 mb-8">
                 <a href="#contact" className="btn-primary px-7 py-4 rounded-xl font-bold text-lg text-white text-center">
