@@ -127,6 +127,47 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         {children}
+        {/* Flowise Chat Widget */}
+        <Script id="flowise-chat" strategy="afterInteractive">
+          {`
+            import('https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js').then(({ default: Chatbot }) => {
+              Chatbot.init({
+                chatflowid: "859eae4e-e97c-48a3-bdb2-b77c97610dfe",
+                apiHost: "https://cloud.flowiseai.com",
+                theme: {
+                  button: {
+                    backgroundColor: "#7c6aff",
+                    right: 20,
+                    bottom: 20,
+                    size: 52,
+                    iconColor: "white",
+                  },
+                  chatWindow: {
+                    welcomeMessage: "Hey! 👋 Thanks for stopping by Meridian Digital. Are you looking to get more leads from your website, or just curious about what we do?",
+                    backgroundColor: "#0a0810",
+                    height: 580,
+                    width: 380,
+                    fontSize: 14,
+                    botMessage: {
+                      backgroundColor: "#1a1830",
+                      textColor: "#f0f0f8",
+                    },
+                    userMessage: {
+                      backgroundColor: "#7c6aff",
+                      textColor: "#ffffff",
+                    },
+                    textInput: {
+                      placeholder: "Type your message...",
+                      backgroundColor: "#13131f",
+                      textColor: "#f0f0f8",
+                      sendButtonColor: "#7c6aff",
+                    },
+                  },
+                },
+              });
+            });
+          `}
+        </Script>
         {/* Google Analytics 4 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-YHF93LYWEP"
