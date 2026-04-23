@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #080810;
+  --bg: #0a0810;
   --bg-card: rgba(255,255,255,0.035);
   --border: rgba(255,255,255,0.07);
   --border-hover: rgba(124,106,255,0.4);
   --text: #f0f0f8;
-  --muted: #8892a4;
+  --muted: #9faab8;
   --primary: #7c6aff;
-  --primary-dark: #5c4ae0;
-  --cyan: #4fc3f7;
+  --primary-dark: #4f46e5;
+  --cyan: #60a5fa;
   --amber: #f59e0b;
   --green: #22c55e;
   --red: #ef4444;
@@ -30,7 +30,7 @@ body {
 /* ── TYPOGRAPHY ── */
 .display { font-family: 'Space Grotesk', sans-serif; }
 .gradient-text {
-  background: linear-gradient(135deg, #a78bfa 0%, #7c6aff 40%, #4fc3f7 100%);
+  background: linear-gradient(135deg, #a78bfa 0%, #7c6aff 40%, #60a5fa 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -59,7 +59,7 @@ body {
 
 /* ── BUTTONS ── */
 .btn-primary {
-  background: linear-gradient(135deg, #7c6aff, #5c4ae0);
+  background: linear-gradient(135deg, #7c6aff, #4f46e5);
   transition: all 0.2s ease;
   position: relative;
   overflow: hidden;

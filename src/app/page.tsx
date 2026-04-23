@@ -37,7 +37,7 @@ const Logo = ({ size = "md" }: { size?: "sm" | "md" | "lg" }) => {
           <linearGradient id="lg1" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
             <stop stopColor="#a78bfa" />
             <stop offset="0.5" stopColor="#7c6aff" />
-            <stop offset="1" stopColor="#4fc3f7" />
+            <stop offset="1" stopColor="#60a5fa" />
           </linearGradient>
         </defs>
         <rect width="32" height="32" rx="9" fill="url(#lg1)" />
@@ -120,7 +120,7 @@ const BrowserMock = () => {
         {/* mini nav */}
         <div className="flex items-center justify-between px-4 py-2.5" style={{ borderBottom: "1px solid rgba(255,255,255,0.06)", background: "#13131f" }}>
           <div className="flex items-center gap-1.5">
-            <div className="w-4 h-4 rounded" style={{ background: "linear-gradient(135deg,#7c6aff,#4fc3f7)" }} />
+            <div className="w-4 h-4 rounded" style={{ background: "linear-gradient(135deg,#7c6aff,#60a5fa)" }} />
             <div className="w-16 h-2.5 rounded" style={{ background: "rgba(255,255,255,0.15)" }} />
           </div>
           <div className="flex gap-2">
@@ -128,7 +128,7 @@ const BrowserMock = () => {
               <div key={i} className="h-1.5 rounded" style={{ width: w, background: "rgba(255,255,255,0.1)" }} />
             ))}
           </div>
-          <div className="px-3 py-1 rounded" style={{ background: "linear-gradient(135deg,#7c6aff,#5c4ae0)", fontSize: 9, color: "white" }}>Call Now</div>
+          <div className="px-3 py-1 rounded" style={{ background: "linear-gradient(135deg,#7c6aff,#4f46e5)", fontSize: 9, color: "white" }}>Call Now</div>
         </div>
         {/* hero */}
         <div className="px-5 py-5">
@@ -138,7 +138,7 @@ const BrowserMock = () => {
           <div className="w-24 h-2 rounded mb-1" style={{ background: "rgba(255,255,255,0.25)" }} />
           <div className="w-36 h-2 rounded mb-4" style={{ background: "rgba(255,255,255,0.25)" }} />
           <div className="flex gap-2">
-            <div className="px-3 py-1.5 rounded" style={{ background: "linear-gradient(135deg,#7c6aff,#5c4ae0)", fontSize: 9, color: "white" }}>Get Free Quote →</div>
+            <div className="px-3 py-1.5 rounded" style={{ background: "linear-gradient(135deg,#7c6aff,#4f46e5)", fontSize: 9, color: "white" }}>Get Free Quote →</div>
             <div className="px-3 py-1.5 rounded" style={{ border: "1px solid rgba(255,255,255,0.2)", fontSize: 9, color: "rgba(255,255,255,0.7)" }}>See Our Work</div>
           </div>
         </div>
@@ -157,12 +157,12 @@ const BrowserMock = () => {
             {/* bubble */}
             {msg && (
               <div className="absolute bottom-10 right-0 mb-1 p-2.5 rounded-xl rounded-br-sm shadow-lg" style={{ background: "#1e1e35", border: "1px solid rgba(124,106,255,0.3)", width: 180, fontSize: 10, color: "rgba(255,255,255,0.85)", lineHeight: 1.4 }}>
-                <div style={{ color: "#8892a4", fontSize: 9, marginBottom: 4 }}>You:</div>
+                <div style={{ color: "#9faab8", fontSize: 9, marginBottom: 4 }}>You:</div>
                 {msg}<span className="animate-blink">|</span>
               </div>
             )}
             {/* chat icon */}
-            <div className="w-9 h-9 rounded-full flex items-center justify-center shadow-lg" style={{ background: "linear-gradient(135deg,#7c6aff,#5c4ae0)", boxShadow: "0 4px 15px rgba(124,106,255,0.5)" }}>
+            <div className="w-9 h-9 rounded-full flex items-center justify-center shadow-lg" style={{ background: "linear-gradient(135deg,#7c6aff,#4f46e5)", boxShadow: "0 4px 15px rgba(124,106,255,0.5)" }}>
               <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="white" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
               </svg>
@@ -326,7 +326,7 @@ export default function Home() {
         {/* background orbs */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full opacity-20" style={{ background: "radial-gradient(circle, #7c6aff, transparent 70%)", filter: "blur(60px)" }} />
-          <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full opacity-15" style={{ background: "radial-gradient(circle, #4fc3f7, transparent 70%)", filter: "blur(60px)" }} />
+          <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full opacity-15" style={{ background: "radial-gradient(circle, #60a5fa, transparent 70%)", filter: "blur(60px)" }} />
         </div>
 
         <div className="max-w-6xl mx-auto w-full">
@@ -617,7 +617,7 @@ export default function Home() {
                   <div className="w-16 h-16 glass rounded-2xl flex items-center justify-center text-2xl mx-auto">
                     {step.icon}
                   </div>
-                  <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold" style={{ background: "linear-gradient(135deg,#7c6aff,#5c4ae0)", fontFamily: "'Space Grotesk',sans-serif" }}>
+                  <div className="absolute -top-2 -right-2 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold" style={{ background: "linear-gradient(135deg,#7c6aff,#4f46e5)", fontFamily: "'Space Grotesk',sans-serif" }}>
                     {step.n.slice(1)}
                   </div>
                 </div>
@@ -646,7 +646,7 @@ export default function Home() {
                 </div>
                 <blockquote className="text-sm leading-relaxed mb-5" style={{ color: "var(--text)" }}>&ldquo;{t.quote}&rdquo;</blockquote>
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm" style={{ background: "linear-gradient(135deg,#7c6aff,#4fc3f7)", fontFamily: "'Space Grotesk',sans-serif" }}>
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm" style={{ background: "linear-gradient(135deg,#7c6aff,#60a5fa)", fontFamily: "'Space Grotesk',sans-serif" }}>
                     {t.name.split(" ").map(n => n[0]).join("")}
                   </div>
                   <div>

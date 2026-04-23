@@ -34,7 +34,7 @@ export default async function Image() {
         {/* headline */}
         <div style={{ fontSize: 72, fontWeight: 800, color: "white", lineHeight: 1.1, marginBottom: 24, maxWidth: 800 }}>
           Your website is{" "}
-          <span style={{ background: "linear-gradient(135deg, #a78bfa, #7c6aff, #4fc3f7)", backgroundClip: "text", color: "transparent" }}>
+          <span style={{ background: "linear-gradient(135deg, #a78bfa, #7c6aff, #60a5fa)", backgroundClip: "text", color: "transparent" }}>
             losing you jobs.
           </span>
         </div>
