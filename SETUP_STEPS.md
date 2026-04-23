@@ -5,7 +5,7 @@ _Estimated total time: 2–3 hours first time_
 
 ## 🔴 STEP 1: Buy the Domain (5 min)
 1. Go to **porkbun.com**
-2. Search: `meridiandigital.co`
+2. Search: `meridiandigital.agency`
 3. Buy it (~$12/year)
 4. Keep the tab open — you'll need it for DNS
 
@@ -32,27 +32,27 @@ Follow the prompts — it'll give you a live URL.
 
 ## 🔴 STEP 3: Connect Your Domain (10 min)
 1. In Vercel → your project → Settings → Domains
-2. Add: `meridiandigital.co` and `www.meridiandigital.co`
+2. Add: `meridiandigital.agency` and `www.meridiandigital.agency`
 3. Vercel will show you DNS records to add
 4. Go to Porkbun → DNS → add the records Vercel shows you
-5. Wait 5–30 min for propagation — then your site is live at meridiandigital.co ✅
+5. Wait 5–30 min for propagation — then your site is live at meridiandigital.agency ✅
 
 ---
 
 ## 🔴 STEP 4: Set Up Email Routing (10 min)
-**Goal:** Emails to hello@meridiandigital.co forward to your real inbox
+**Goal:** Emails to hello@meridiandigital.agency forward to your real inbox
 
 **Option A — Cloudflare Email Routing (free, recommended)**
-1. Go to **cloudflare.com** → Add site → enter meridiandigital.co
+1. Go to **cloudflare.com** → Add site → enter meridiandigital.agency
 2. Follow steps to point Porkbun DNS to Cloudflare nameservers
 3. Cloudflare → Email → Email Routing → Enable
-4. Add rule: hello@meridiandigital.co → your personal email
+4. Add rule: hello@meridiandigital.agency → your personal email
 5. Done — hello@ now forwards to you
 
 **Option B — Zoho Mail (free, if you want to SEND from hello@)**
 1. Go to **zoho.com/mail** → Free plan → Add domain
 2. Verify domain ownership via DNS TXT record
-3. Create mailbox: hello@meridiandigital.co
+3. Create mailbox: hello@meridiandigital.agency
 4. You can now send AND receive from that address
 
 > **Scoop's pick:** Use Cloudflare routing for receiving + Brevo for sending outreach. Simplest setup.
@@ -72,7 +72,7 @@ Then: Vercel → Deployments → Redeploy (to pick up the new env vars)
 
 ## 🟡 STEP 6: Set Up Brevo (20 min)
 1. Go to **brevo.com** → Sign up free (300 emails/day free)
-2. Settings → Senders & IPs → Add sender: hello@meridiandigital.co
+2. Settings → Senders & IPs → Add sender: hello@meridiandigital.agency
 3. Create 4 Contact Lists: Restoration, Electrician, GC, Auto Repair
 4. Add custom contact attributes (Contacts → Settings → Contact Attributes):
    - BUSINESS (text)
@@ -126,14 +126,14 @@ Follow AIRTABLE_SETUP.md exactly — Steps 1 through 6.
 1. **LinkedIn Company Page:**
    - linkedin.com → Work → Create a company page
    - Name: Meridian Digital
-   - Website: meridiandigital.co
+   - Website: meridiandigital.agency
    - Logo: use the SVG from the website (public/favicon.svg) or screenshot the logo
    - Tagline: "AI-powered business hubs for service companies"
 
 2. **Instagram:**
    - Check @meridiandigital availability
    - Bio: "We rebuild outdated service business websites into AI-powered hubs. 14-day delivery. 🔧⚡🔥"
-   - Link: meridiandigital.co
+   - Link: meridiandigital.agency
 
 3. **Buffer (free scheduling):**
    - buffer.com → free plan → connect LinkedIn + Instagram
@@ -157,10 +157,10 @@ Follow AIRTABLE_SETUP.md exactly — Steps 1 through 6.
 
 ## ✅ LAUNCH CHECKLIST
 
-- [ ] Domain live at meridiandigital.co
+- [ ] Domain live at meridiandigital.agency
 - [ ] Site loads correctly on mobile
 - [ ] Contact form submits → Airtable record created → email alert received
-- [ ] hello@meridiandigital.co forwards to your inbox
+- [ ] hello@meridiandigital.agency forwards to your inbox
 - [ ] Brevo sequences created and active
 - [ ] All 4 Stripe Payment Links saved
 - [ ] LinkedIn company page published

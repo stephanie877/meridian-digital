@@ -34,8 +34,8 @@ export async function POST(req: NextRequest) {
           "api-key": brevoKey,
         },
         body: JSON.stringify({
-          sender: { name: "Meridian Digital Website", email: "hello@meridiandigital.co" },
-          to: [{ email: "hello@meridiandigital.co", name: "Meridian Digital" }],
+          sender: { name: "Meridian Digital Website", email: "hello@meridiandigital.agency" },
+          to: [{ email: "hello@meridiandigital.agency", name: "Meridian Digital" }],
           subject: `New Lead: ${business} (${name})`,
           htmlContent: `
             <h2>New Contact Form Submission</h2>

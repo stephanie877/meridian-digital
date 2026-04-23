@@ -138,7 +138,7 @@ I build AI-powered sites specifically for restoration companies. They load insta
 Worth a 15-minute call? I'll pull your full site audit beforehand.
 
 [Name]
-Meridian Digital | meridiandigital.co
+Meridian Digital | meridiandigital.agency
 ```
 
 **Email 2 — Day 3: The Competitor Angle**
@@ -350,10 +350,10 @@ Worth a chat?
 ## ⚙️ MAKE.COM AUTOMATION FLOWS
 
 ### Flow 1: Contact Form → CRM + Alert
-**Trigger:** Webhook (meridiandigital.co/api/contact)
+**Trigger:** Webhook (meridiandigital.agency/api/contact)
 **Actions:**
 1. Create Airtable record (Niche: Inbound, Status: Replied)
-2. Send email alert to hello@meridiandigital.co
+2. Send email alert to hello@meridiandigital.agency
 3. Add contact to Brevo list "Inbound Leads"
 
 ### Flow 2: New Lead → Email Sequence
@@ -477,15 +477,15 @@ Create these products in Stripe Dashboard → Products:
 ## 🚀 DEPLOYMENT CHECKLIST
 
 ### Domain & Hosting
-- [ ] Buy `meridiandigital.co` on Porkbun (~$12)
+- [ ] Buy `meridiandigital.agency` on Porkbun (~$12)
 - [ ] Push site repo to GitHub
 - [ ] Import repo in Vercel → Deploy
-- [ ] Add domain in Vercel: Settings → Domains → meridiandigital.co
+- [ ] Add domain in Vercel: Settings → Domains → meridiandigital.agency
 - [ ] Verify DNS propagation (usually 5–30 min on Porkbun)
 
 ### Email
-- [ ] Set up Cloudflare Email Routing (free): hello@meridiandigital.co → your real inbox
-- [ ] OR: Zoho Mail free plan for sending from hello@meridiandigital.co
+- [ ] Set up Cloudflare Email Routing (free): hello@meridiandigital.agency → your real inbox
+- [ ] OR: Zoho Mail free plan for sending from hello@meridiandigital.agency
 
 ### Environment Variables (add in Vercel → Settings → Env Vars)
 - [ ] `MAKE_WEBHOOK_URL` — from your Make.com scenario
@@ -513,7 +513,7 @@ Create these products in Stripe Dashboard → Products:
 ## 📅 30-DAY ROADMAP
 
 ### Week 1 — Infrastructure
-- [ ] Site live on meridiandigital.co
+- [ ] Site live on meridiandigital.agency
 - [ ] Airtable + Make.com + Brevo configured
 - [ ] First 50 qualified leads in CRM
 - [ ] Email sequences running

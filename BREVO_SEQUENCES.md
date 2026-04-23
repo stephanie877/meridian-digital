@@ -20,7 +20,7 @@ _Import these into Brevo → Automations → Email Campaigns_
 ### Email 1 — Send immediately
 **Subject:** {{contact.BUSINESS}} — your site during a 2am emergency
 **From name:** [Your Name] at Meridian Digital
-**From email:** hello@meridiandigital.co
+**From email:** hello@meridiandigital.agency
 
 **Body:**
 ```
@@ -38,7 +38,7 @@ Worth a 15-minute call? I'll pull your full site audit beforehand — no charge.
 
 [Your Name]
 Meridian Digital
-meridiandigital.co
+meridiandigital.agency
 
 P.S. The audit is completely free. I'll tell you exactly what's costing you calls.
 ```
@@ -85,7 +85,7 @@ If the timing isn't right, no hard feelings — I'll check back in 90 days.
 
 [Your Name]
 Meridian Digital
-meridiandigital.co
+meridiandigital.agency
 ```
 
 ---
@@ -112,7 +112,7 @@ I build AI-powered sites for electricians — mobile-first, instant-loading, wit
 I'll pull the full site audit beforehand — free.
 
 [Your Name]
-Meridian Digital | meridiandigital.co
+Meridian Digital | meridiandigital.agency
 ```
 
 ---
@@ -184,7 +184,7 @@ I build AI-powered portfolio sites for contractors — project galleries, instan
 15 minutes to show you what it looks like for {{contact.BUSINESS}}?
 
 [Your Name]
-Meridian Digital | meridiandigital.co
+Meridian Digital | meridiandigital.agency
 ```
 
 ---
@@ -252,7 +252,7 @@ I add AI-powered booking and a fast mobile site to independent shops in 14 days.
 Worth a quick chat?
 
 [Your Name]
-Meridian Digital | meridiandigital.co
+Meridian Digital | meridiandigital.agency
 ```
 
 ---

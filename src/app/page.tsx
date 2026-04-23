@@ -398,7 +398,7 @@ export default function Home() {
                 {status === "sending" ? "Sending..." : "Request My Free Audit →"}
               </button>
               {status === "error" && (
-                <p className="text-red-400 text-sm text-center">Something went wrong. Email us directly at hello@meridiandigital.co</p>
+                <p className="text-red-400 text-sm text-center">Something went wrong. Email us directly at hello@meridiandigital.agency</p>
               )}
               <p className="text-gray-600 text-xs text-center">No spam. No hard sell. Just an honest assessment.</p>
             </form>
@@ -414,7 +414,7 @@ export default function Home() {
             <a href="#services" className="hover:text-white transition-colors">Services</a>
             <a href="#process" className="hover:text-white transition-colors">Process</a>
             <a href="#contact" className="hover:text-white transition-colors">Contact</a>
-            <a href="mailto:hello@meridiandigital.co" className="hover:text-white transition-colors">hello@meridiandigital.co</a>
+            <a href="mailto:hello@meridiandigital.agency" className="hover:text-white transition-colors">hello@meridiandigital.agency</a>
           </div>
           <p className="text-gray-600 text-sm">© 2025 Meridian Digital. All rights reserved.</p>
         </div>

@@ -106,7 +106,7 @@ Add a new table called **Clients** with:
 4. Paste URL into Vercel env vars as `MAKE_WEBHOOK_URL`
 5. Add action: **Airtable → Create Record** → connect your base → select Leads table
 6. Map fields: name→Owner Name, business→Business, email→Email, phone→Phone, message→Website, source→"Inbound", status→"Replied"
-7. Add second action: **Email → Send Email** → to hello@meridiandigital.co → "New inbound lead: {{business}}"
+7. Add second action: **Email → Send Email** → to hello@meridiandigital.agency → "New inbound lead: {{business}}"
 8. Save and activate scenario
 
 ---
