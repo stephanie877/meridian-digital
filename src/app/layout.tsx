@@ -130,6 +130,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Flowise Chat Widget */}
         <Script id="flowise-chat" strategy="afterInteractive">
           {`
+            setTimeout(() => {
             import('https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js').then(({ default: Chatbot }) => {
               Chatbot.init({
                 chatflowid: "859eae4e-e97c-48a3-bdb2-b77c97610dfe",
@@ -166,6 +167,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 },
               });
             });
+            }, 5000);
           `}
         </Script>
         {/* Google Analytics 4 */}
