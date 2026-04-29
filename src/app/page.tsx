@@ -429,64 +429,65 @@ export default function Home() {
       {/* ── PROBLEM ── */}
       <section className="py-24 px-5">
         <div className="max-w-5xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            {/* before */}
-            <div className="fade-up">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-5" style={{ background: "rgba(239,68,68,0.1)", border: "1px solid rgba(239,68,68,0.2)", color: "#f87171" }}>
-                ❌ What prospects see on your outdated site
+          <div className="text-center mb-14 fade-up">
+            <div className="chip mx-auto mb-5">The Problem</div>
+            <h2 className="display font-bold mb-4" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)" }}>
+              Most service business websites<br /><span className="gradient-text">are actively costing you jobs.</span>
+            </h2>
+            <p style={{ color: "var(--muted)", maxWidth: 500, margin: "0 auto" }}>Here&apos;s what&apos;s typically happening right now — and what changes the day you launch with us.</p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* Without */}
+            <div className="rounded-2xl p-7 fade-up delay-1" style={{ background: "rgba(239,68,68,0.04)", border: "1px solid rgba(239,68,68,0.15)" }}>
+              <div className="flex items-center gap-3 mb-7">
+                <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "rgba(239,68,68,0.12)" }}>
+                  <span style={{ color: "#f87171", fontSize: 15 }}>✕</span>
+                </div>
+                <span className="font-bold text-sm uppercase tracking-widest" style={{ color: "#f87171" }}>Without Meridian</span>
               </div>
-              <div className="p-6 rounded-2xl" style={{ background: "#0f0f1a", border: "1px solid rgba(239,68,68,0.15)" }}>
-                <div className="space-y-4">
-                  {[
-                    { label: "Mobile Speed", score: 22, max: 100, color: "#ef4444" },
-                    { label: "Visual Design", score: 15, max: 100, color: "#ef4444" },
-                    { label: "Lead Capture", score: 5, max: 100, color: "#ef4444" },
-                    { label: "Local SEO", score: 20, max: 100, color: "#f59e0b" },
-                  ].map(({ label, score, max, color }) => (
-                    <div key={label}>
-                      <div className="flex justify-between text-sm mb-1.5">
-                        <span style={{ color: "var(--muted)" }}>{label}</span>
-                        <span style={{ color }}>{score}/{max}</span>
-                      </div>
-                      <div className="score-bar">
-                        <div className="score-fill" style={{ width: `${(score / max) * 100}%`, background: color }} />
-                      </div>
+              <ul className="space-y-5">
+                {[
+                  ["Calls going to voicemail after 5pm", "78% of leads contact the first business that responds. That&apos;s not you after hours."],
+                  ["No follow-up system", "Most leads need 5+ touches. Without automation, they go cold — and call a competitor."],
+                  ["Zero new Google reviews", "Customers don&apos;t leave reviews unless you ask. No system = no social proof."],
+                  ["Site loads in 8+ seconds on mobile", "Google penalizes slow sites. Your competitors rank above you because of this alone."],
+                  ["Owner handles every inquiry manually", "You&apos;re the office manager, sales rep, and technician. That doesn&apos;t scale."],
+                ].map(([title, sub]) => (
+                  <li key={title} className="flex items-start gap-3">
+                    <span className="mt-1 flex-shrink-0 text-sm" style={{ color: "#f87171" }}>✕</span>
+                    <div>
+                      <div className="text-sm font-medium text-white mb-0.5">{title}</div>
+                      <div className="text-xs leading-relaxed" style={{ color: "var(--muted)" }} dangerouslySetInnerHTML={{ __html: sub }} />
                     </div>
-                  ))}
-                </div>
-                <div className="mt-5 pt-4" style={{ borderTop: "1px solid rgba(255,255,255,0.05)" }}>
-                  <p className="text-sm" style={{ color: "#f87171" }}>Result: 78% of mobile visitors bounce before the page loads. Every bounce is a missed call.</p>
-                </div>
-              </div>
+                  </li>
+                ))}
+              </ul>
             </div>
-            {/* after */}
-            <div className="fade-up delay-2">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold mb-5" style={{ background: "rgba(34,197,94,0.1)", border: "1px solid rgba(34,197,94,0.2)", color: "#4ade80" }}>
-                ✅ What a Meridian Digital hub delivers
+            {/* With */}
+            <div className="rounded-2xl p-7 fade-up delay-2" style={{ background: "rgba(34,197,94,0.04)", border: "1px solid rgba(34,197,94,0.15)" }}>
+              <div className="flex items-center gap-3 mb-7">
+                <div className="w-9 h-9 rounded-full flex items-center justify-center flex-shrink-0" style={{ background: "rgba(34,197,94,0.12)" }}>
+                  <span style={{ color: "#4ade80", fontSize: 15 }}>✓</span>
+                </div>
+                <span className="font-bold text-sm uppercase tracking-widest" style={{ color: "#4ade80" }}>With Meridian Digital</span>
               </div>
-              <div className="p-6 rounded-2xl" style={{ background: "#0f0f1a", border: "1px solid rgba(34,197,94,0.15)" }}>
-                <div className="space-y-4">
-                  {[
-                    { label: "Mobile Speed", score: 94, max: 100, color: "#22c55e" },
-                    { label: "Visual Design", score: 97, max: 100, color: "#22c55e" },
-                    { label: "Lead Capture", score: 100, max: 100, color: "#22c55e" },
-                    { label: "Local SEO", score: 91, max: 100, color: "#22c55e" },
-                  ].map(({ label, score, max, color }) => (
-                    <div key={label}>
-                      <div className="flex justify-between text-sm mb-1.5">
-                        <span style={{ color: "var(--muted)" }}>{label}</span>
-                        <span style={{ color }}>{score}/{max}</span>
-                      </div>
-                      <div className="score-bar">
-                        <div className="score-fill" style={{ width: `${(score / max) * 100}%`, background: color }} />
-                      </div>
+              <ul className="space-y-5">
+                {[
+                  ["AI bot captures leads at 2am on a Saturday", "A $14,000 flood job came in at 2am. The owner woke up to a qualified lead in his inbox."],
+                  ["5-touch automated follow-up runs itself", "Leads that don&apos;t reply get a sequence of follow-ups. No ghosting. No manual chasing."],
+                  ["Review requests go out after every job", "Automated SMS after job close = steady stream of Google reviews on autopilot."],
+                  ["Sub-2s mobile load, ranked by Google", "Built on Next.js + enterprise CDN. Loads fast. Ranks higher. Converts better."],
+                  ["Your time stays on the job, not the inbox", "The AI handles inquiries, pre-qualifies leads, and books calls — without you lifting a finger."],
+                ].map(([title, sub]) => (
+                  <li key={title} className="flex items-start gap-3">
+                    <span className="mt-1 flex-shrink-0 text-sm" style={{ color: "#4ade80" }}>✓</span>
+                    <div>
+                      <div className="text-sm font-medium text-white mb-0.5">{title}</div>
+                      <div className="text-xs leading-relaxed" style={{ color: "var(--muted)" }} dangerouslySetInnerHTML={{ __html: sub }} />
                     </div>
-                  ))}
-                </div>
-                <div className="mt-5 pt-4" style={{ borderTop: "1px solid rgba(255,255,255,0.05)" }}>
-                  <p className="text-sm" style={{ color: "#4ade80" }}>Result: Loads in 1.4s on mobile. AI bot captures leads 24/7. One job covers the cost.</p>
-                </div>
-              </div>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
@@ -538,71 +539,52 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-6">
             {caseStudies.map((cs, i) => (
-              <div key={cs.co} className={`glass rounded-2xl overflow-hidden fade-up delay-${i + 1}`} style={{ border: "1px solid var(--border)" }}>
+              <div key={cs.co} className={`glass rounded-2xl overflow-hidden fade-up delay-${i + 1}`} style={{ border: "1px solid var(--border)", display: "flex", flexDirection: "column" }}>
+                {/* Header */}
                 <div className="p-5" style={{ background: "rgba(255,255,255,0.02)", borderBottom: "1px solid var(--border)" }}>
                   <div className="flex items-center justify-between mb-1">
-                    <span className="text-sm font-medium" style={{ color: "var(--muted)" }}>{cs.niche}</span>
+                    <span className="text-xs font-medium" style={{ color: "var(--muted)" }}>{cs.niche}</span>
                     <span className="text-xs" style={{ color: "var(--muted)" }}>{cs.city}</span>
                   </div>
-                  <div className="display font-bold text-white">{cs.co}</div>
+                  <div className="display font-bold text-white text-base">{cs.co}</div>
                 </div>
-                <div className="p-5 space-y-5">
-                  {/* before */}
-                  <div>
-                    <div className="flex items-center gap-2 mb-2.5">
-                      <div className="w-2 h-2 rounded-full bg-red-400" />
-                      <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#f87171" }}>Before</span>
+                {/* Transformation hero */}
+                <div className="px-5 py-6" style={{ borderBottom: "1px solid var(--border)" }}>
+                  <div className="text-xs font-semibold uppercase tracking-widest mb-3" style={{ color: "var(--muted)" }}>Monthly Leads</div>
+                  <div className="flex items-center gap-3">
+                    <div>
+                      <div className="text-3xl font-bold" style={{ fontFamily: "'Space Grotesk',sans-serif", color: "#f87171" }}>{cs.before.monthlyLeads}</div>
+                      <div className="text-xs mt-0.5" style={{ color: "var(--muted)" }}>Before</div>
                     </div>
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="text-2xl font-bold" style={{ fontFamily: "'Space Grotesk',sans-serif", color: "#f87171" }}>{cs.before.score}</div>
-                      <div>
-                        <div className="text-xs font-medium" style={{ color: "var(--muted)" }}>PageSpeed Mobile</div>
-                        <div className="score-bar w-20 mt-1"><div className="score-fill" style={{ width: `${cs.before.score}%`, background: "#ef4444" }} /></div>
-                      </div>
-                      <div className="ml-auto text-right">
-                        <div className="text-xs" style={{ color: "var(--muted)" }}>Monthly leads</div>
-                        <div className="font-bold text-lg" style={{ color: "#f87171" }}>{cs.before.monthlyLeads}</div>
-                      </div>
+                    <div className="flex-1 flex items-center gap-1.5">
+                      <div className="flex-1 h-px" style={{ background: "var(--border)" }} />
+                      <svg className="flex-shrink-0" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="#7c6aff" strokeWidth={2.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                      </svg>
+                      <div className="flex-1 h-px" style={{ background: "var(--border)" }} />
                     </div>
-                    <ul className="space-y-1">
-                      {cs.before.issues.map(iss => (
-                        <li key={iss} className="flex items-center gap-1.5 text-xs" style={{ color: "var(--muted)" }}>
-                          <span style={{ color: "#f87171" }}>✕</span> {iss}
-                        </li>
-                      ))}
-                    </ul>
+                    <div className="text-right">
+                      <div className="text-3xl font-bold" style={{ fontFamily: "'Space Grotesk',sans-serif", color: "#4ade80" }}>{cs.after.monthlyLeads}</div>
+                      <div className="text-xs mt-0.5" style={{ color: "var(--muted)" }}>After</div>
+                    </div>
                   </div>
-                  {/* after */}
-                  <div>
-                    <div className="flex items-center gap-2 mb-2.5">
-                      <div className="w-2 h-2 rounded-full bg-green-400" />
-                      <span className="text-xs font-semibold uppercase tracking-widest" style={{ color: "#4ade80" }}>After</span>
-                    </div>
-                    <div className="flex items-center gap-3 mb-3">
-                      <div className="text-2xl font-bold" style={{ fontFamily: "'Space Grotesk',sans-serif", color: "#4ade80" }}>{cs.after.score}</div>
-                      <div>
-                        <div className="text-xs font-medium" style={{ color: "var(--muted)" }}>PageSpeed Mobile</div>
-                        <div className="score-bar w-20 mt-1"><div className="score-fill" style={{ width: `${cs.after.score}%`, background: "#22c55e" }} /></div>
-                      </div>
-                      <div className="ml-auto text-right">
-                        <div className="text-xs" style={{ color: "var(--muted)" }}>Monthly leads</div>
-                        <div className="font-bold text-lg" style={{ color: "#4ade80" }}>{cs.after.monthlyLeads}</div>
-                      </div>
-                    </div>
-                    <ul className="space-y-1">
-                      {cs.after.wins.map(w => (
-                        <li key={w} className="flex items-center gap-1.5 text-xs" style={{ color: "var(--muted)" }}>
-                          <span style={{ color: "#4ade80" }}>✓</span> {w}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  {/* quote */}
-                  <blockquote className="pt-3" style={{ borderTop: "1px solid var(--border)" }}>
-                    <p className="text-sm italic mb-2 leading-relaxed" style={{ color: "var(--text)" }}>&ldquo;{cs.quote}&rdquo;</p>
-                    <p className="text-xs" style={{ color: "var(--muted)" }}>— {cs.person}</p>
-                  </blockquote>
                 </div>
+                {/* Wins */}
+                <div className="px-5 py-5 flex-1">
+                  <ul className="space-y-3">
+                    {cs.after.wins.map(w => (
+                      <li key={w} className="flex items-start gap-2.5 text-sm">
+                        <span className="mt-0.5 flex-shrink-0" style={{ color: "#4ade80" }}>✓</span>
+                        <span style={{ color: "var(--text)" }}>{w}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                {/* Quote */}
+                <blockquote className="mx-5 mb-5 p-4 rounded-xl" style={{ background: "rgba(124,106,255,0.07)", border: "1px solid rgba(124,106,255,0.15)" }}>
+                  <p className="text-sm italic mb-2 leading-relaxed" style={{ color: "var(--text)" }}>&ldquo;{cs.quote}&rdquo;</p>
+                  <p className="text-xs" style={{ color: "var(--muted)" }}>— {cs.person}</p>
+                </blockquote>
               </div>
             ))}
           </div>
