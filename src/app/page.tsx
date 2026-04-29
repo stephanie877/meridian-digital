@@ -345,7 +345,7 @@ export default function Home() {
                 every single day.
               </h1>
               <p className="text-lg leading-relaxed mb-4" style={{ color: "var(--muted)", maxWidth: 480 }}>
-                Right now, someone in your city is Googling your services. They&apos;ll call whoever loads first, looks credible, and has a way to reach them. If that&apos;s not you — that job goes to your competitor. We fix that in 14 days.
+                Most service businesses miss half their leads — not because they&apos;re bad at the work, but because no one&apos;s there at 2am, follow-up never happens, and reviews don&apos;t collect themselves. We build AI-integrated websites that handle all of it automatically. In 14 days.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 mb-8">
@@ -498,10 +498,10 @@ export default function Home() {
           <div className="text-center mb-16 fade-up">
             <div className="chip mx-auto mb-5">What&apos;s Included</div>
             <h2 className="display font-bold mb-4" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.8rem)" }}>
-              Not just a website.<br />A full revenue system.
+              Not just a website.<br />An AI system that runs like a full-time office manager.
             </h2>
             <p className="max-w-xl mx-auto" style={{ color: "var(--muted)" }}>
-              Every hub is built with the same goal: make your phone ring and your calendar fill up — without you having to lift a finger.
+              Every site we build is wired with AI — instant lead response, automated follow-up, review collection, and 24/7 chat. The gaps local businesses always fall short on, handled automatically.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -889,7 +889,7 @@ export default function Home() {
             <div className="md:col-span-2">
               <Logo />
               <p className="mt-4 text-sm leading-relaxed max-w-xs" style={{ color: "var(--muted)" }}>
-                AI-powered business hubs for service companies. We rebuild outdated websites into revenue-generating machines — in 14 days.
+                AI-integrated websites and lead generation systems for local service businesses. Instant lead response, automated follow-up, review collection, and 24/7 AI chat — so your business runs like it has a full-time office manager, without the payroll.
               </p>
               <div className="flex gap-3 mt-5">
                 <a href="mailto:hello@meridiandigital.agency" className="flex items-center gap-2 text-sm" style={{ color: "var(--muted)" }}>
